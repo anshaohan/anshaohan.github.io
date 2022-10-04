@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2022-10-04T11:27:27.090Z</updated>
+  <updated>2022-10-04T11:29:14.977Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Vue 双向数据绑定原理</title>
+    <link href="http://example.com/20219/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/"/>
+    <id>http://example.com/20219/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/</id>
+    <published>+020219-08-16T11:09:31.000Z</published>
+    <updated>2022-10-04T11:29:14.977Z</updated>
+    
+    
+    
+    
+    
+    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Css盒子模型</title>
-    <link href="http://example.com/2022/08/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://example.com/2022/08/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
-    <published>2022-08-16T11:09:31.000Z</published>
-    <updated>2022-10-04T11:27:27.090Z</updated>
+    <link href="http://example.com/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    <id>http://example.com/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
+    <published>2019-02-16T11:09:31.000Z</published>
+    <updated>2022-10-04T11:29:05.638Z</updated>
     
     <content type="html"><![CDATA[<p>标准盒子模型： </p><ul><li>content（内容）</li><li>margin（外边距） ：盒子与盒子之间的距离。</li><li>padding（内边距）：内容与边框的距离。</li><li>border（边框）</li></ul><p>盒子总宽度 &#x3D; width + padding + border + margin;</p><p>盒子总高度 &#x3D; height + padding + border + margin</p><p> 也就是，<code>width/height</code> 只是内容高度，不包含 <code>padding</code> 和 <code>border</code>值 </p><p>IE盒子模型（怪异盒模型）</p><ul><li>content </li><li>margin</li></ul><p>盒子总宽度 &#x3D; width + margin;</p><p>盒子总高度 &#x3D; height + margin;</p><p> 也就是，<code>width/height</code> 包含了 <code>padding</code>和 <code>border</code>值 </p><p> 开发中往往使用IE盒模型，只需要设置box-sizing：border-box </p><ul><li>content-box 默认值，元素的 width&#x2F;height 不包含padding，border，与标准盒子模型表现一致</li><li>border-box 元素的 width&#x2F;height 包含 padding，border，与怪异盒子模型表现一致</li><li>inherit 指定 box-sizing 属性的值，应该从父元素继承</li></ul>]]></content>
     
@@ -42,21 +57,6 @@
     
     
     <category term="Css" scheme="http://example.com/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vue 双向数据绑定原理</title>
-    <link href="http://example.com/2022/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/"/>
-    <id>http://example.com/2022/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/</id>
-    <published>2022-08-16T11:09:31.000Z</published>
-    <updated>2022-10-04T11:27:10.224Z</updated>
-    
-    
-    
-    
-    
-    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
     
   </entry>
   
