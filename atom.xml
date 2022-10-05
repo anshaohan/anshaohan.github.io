@@ -43,8 +43,6 @@
     <content type="html"><![CDATA[<p>标准盒子模型： </p><ul><li>content（内容）</li><li>margin（外边距） ：盒子与盒子之间的距离。</li><li>padding（内边距）：内容与边框的距离。</li><li>border（边框）</li></ul><p>盒子总宽度 &#x3D; width + padding + border + margin;</p><p>盒子总高度 &#x3D; height + padding + border + margin</p><p> 也就是，<code>width/height</code> 只是内容高度，不包含 <code>padding</code> 和 <code>border</code>值 </p><p>IE盒子模型（怪异盒模型）</p><ul><li>content </li><li>margin</li></ul><p>盒子总宽度 &#x3D; width + margin;</p><p>盒子总高度 &#x3D; height + margin;</p><p> 也就是，<code>width/height</code> 包含了 <code>padding</code>和 <code>border</code>值 </p><p> 开发中往往使用IE盒模型，只需要设置box-sizing：border-box </p><ul><li>content-box 默认值，元素的 width&#x2F;height 不包含padding，border，与标准盒子模型表现一致</li><li>border-box 元素的 width&#x2F;height 包含 padding，border，与怪异盒子模型表现一致</li><li>inherit 指定 box-sizing 属性的值，应该从父元素继承</li></ul>]]></content>
     
     
-      
-      
     <summary type="html">&lt;p&gt;标准盒子模型： &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;content（内容）&lt;/li&gt;
@@ -52,8 +50,17 @@
 &lt;li&gt;padding（内边距）：内容与边框的距离。&lt;/li&gt;
 &lt;li&gt;border（边框）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;盒子总</summary>
-      
+&lt;p&gt;盒子总宽度 &amp;#x3D; width + padding + border + margin;&lt;/p&gt;
+&lt;p&gt;盒子总高度 &amp;#x3D; height + padding + border + margin&lt;/p&gt;
+&lt;p&gt; 也就是，&lt;code&gt;width/height&lt;/code&gt; 只是内容高度，不包含 &lt;code&gt;padding&lt;/code&gt; 和 &lt;code&gt;border&lt;/code&gt;值 &lt;/p&gt;
+&lt;p&gt;IE盒子模型（怪异盒模型）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;content &lt;/li&gt;
+&lt;li&gt;margin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;盒子总宽度 &amp;#x3D; width + margin;&lt;/p&gt;
+&lt;p&gt;盒子总高度 &amp;#x3D; height + margin;&lt;/p&gt;
+&lt;p&gt; 也就是，&lt;code&gt;width/height&lt;/code&gt; 包含了 &lt;code&gt;padding&lt;/code&gt;和 &lt;code&gt;border&lt;/code&gt;值 &lt;/p&gt;</summary>
     
     
     
@@ -74,12 +81,16 @@
     <content type="html"><![CDATA[<p>​rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多</p><p>​优点  代码更简洁  效率更高   默认支持 tree-shaking</p><p>​缺点就是 加载其他类型的资源文件或者是导入commonjs模块</p><p>​编译es新特性等等一些需求需要使用插件来完成 会使开发效率降低</p><p>​但是在打包js库时 rollup比webpack更有优势  打包代码更小更快</p><p>​parcel  </p><p>​相比于webpack来说用法更简单 支持自动安装依赖，并且不需要配置什么，因为时多线程所以构建速度也会比webpack快，但是无法向webpack一样配置对应的loader</p><p>​snowpack</p><p>​每次保存单个文件时 为应用程序每个文件构建一次，就可以永久缓存 文件更改时 snowpack 会重新构建该文件</p><p>​Vite</p><p>​是一种新型前端构建工具 能显著的提升前端开发体验</p><p>​两部分组成</p><p>​一个开发服务器</p><p>​一套构建指令  使用rollup 来打包你的代码  并且不需要自己配置</p><p>​就可以输出用于生产环境的优化过的静态资源</p><p>​快速的冷启动 、即时的模块热更新 真正的按需编译</p><p>​vite会直接启动开发服务器 不需要进行打包操作 也就意味着不需要分析 模块之间的依赖 不需要编译 所以启动速度很快</p><p>​当修改一个模块时只需要然浏览器重新请求这个模块 不需要像webpack那样需要把该模块的相关依赖全部编译 效率相对来说更高</p>]]></content>
     
     
-      
-      
     <summary type="html">&lt;p&gt;​	rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多&lt;/p&gt;
 &lt;p&gt;​			优点  代码更简洁  效率更高   默认支持 tree-shaking&lt;/p&gt;
-&lt;p&gt;​			缺点就是 加载其他类型的</summary>
-      
+&lt;p&gt;​			缺点就是 加载其他类型的资源文件或者是导入commonjs模块&lt;/p&gt;
+&lt;p&gt;​			编译es新特性等等一些需求需要使用插件来完成 会使开发效率降低&lt;/p&gt;
+&lt;p&gt;​			但是在打包js库时 rollup比webpack更有优势  打包代码更小更快&lt;/p&gt;
+&lt;p&gt;​		parcel  &lt;/p&gt;
+&lt;p&gt;​			相比于webpack来说用法更简单 支持自动安装依赖，并且不需要配置什么，因为时多线程所以构建速度也会比webpack快，但是无法向webpack一样配置对应的loader&lt;/p&gt;
+&lt;p&gt;​		snowpack&lt;/p&gt;
+&lt;p&gt;​				每次保存单个文件时 为应用程序每个文件构建一次，就可以永久缓存 文件更改时 snowpack 会重新构建该文件&lt;/p&gt;
+&lt;p&gt;​		Vite&lt;/p&gt;</summary>
     
     
     
