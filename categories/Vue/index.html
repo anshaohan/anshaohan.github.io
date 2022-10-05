@@ -427,6 +427,71 @@
         
         
             
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2019/10/20/vue%E4%B8%AD%E7%9A%84diff%E7%AE%97%E6%B3%95%E5%92%8C%E8%99%9A%E6%8B%9Fdom/">
+                
+                <span class="abstract-title-text">vue中的diff算法和虚拟dom</span>
+            </a>
+            <div class="abstract-content">
+                <pre><code>diff算法 是一种对比算法 对比的对象是 新旧虚拟dom diff算法并不仅仅是对比 还可以将对比的结果更新到真实dom上实现视图更新
+diff算法的核心就是一个pacth函数 来进行对比新旧虚拟dom并且更新到真实dom
+diff算法的特性就是 同级比较 深度优先
+diff算法的原理
+        首先会有一个 h函数 这个函数中有一个vnode方法 创建虚拟dom 并且返回出去 作用就是初始化时将根据真实dom创建一层虚拟dom
+        当数据更新时 会创建一个新的虚拟dom 将新的虚拟dom和旧的虚拟dom 传入patch函数中并且进行对比
+        patch相当于对比入口,对比的是根节点并且将更新操作到真实dom上
+        patch函数中有几个方法 patchVnode 进行两个节点的子节点进行比较并且将更新操作到真实dom
+        然后有一个 updataChildren 方法进行对比节点
+        对比过程中会有四个指针  旧前  旧后  新前  新后 四个指针  旧节点的第一个 和最后一个节点我们称之为 旧前和旧后
+        相同的 新的vdom 的第一个和最后一个称之为 新前 新后
+        对比过程  
+            旧前和新前对比    旧后和新后对比  旧前和新后对比 旧后和新前对比
+        在对比过程中如果对比两个节点相同就不会继续对比 然后继续对比剩下的 如果对比两个节点没有相似度的话就直接新增节点
+        diff算法就是一个循环递归的过程
+        具体源码的话可以去看一些 snabbdom 这个库 diff算法是基于这个库的
+
+虚拟dom 
+        虚拟dom简单来说就是一个js对象  使用js对象的方式来描述页面的dom
+        虚拟dom的好处 相比于真实dom 虚拟dom的创建成本比较低 并且如果中间不加一层虚拟dom直接操作真实dom的话会频繁的触发回流和重绘
+        造成浏览器的资源浪费并且会造成页面卡顿 影响用户体验 如果有一层虚拟dom呢 如果数据更新就会先去操作虚拟dom 等待对比更新完成之后才会操作真实dom 大大的提高了浏览器的效率，真实dom的创建成本很高 哪怕是简单的一个div 也有很多的属性和方法 而虚拟dom的话就只需要最基本的方法就可以实现
+
+
+key的作用 
+       ​key的作用就是唯一标识  在进行diff的时候对比的两个虚拟节点，会进行判断是否为相同节点  ，有了key之后 可以更加明确的判断连哥哥姐弟啊你是否为同一个虚拟节点  是的话就判断子节点是否有变更 如果不加key 的话如果两个标签名相同 就会判定为同一个节点 ，对比之后就会发现两个节点有不一样 这样就会增加很多对真实dom的操作 导致页面频繁的回流和重绘  使用key可以有效的减少真实dom的变动减少页面的回流和重绘 从而提高页面更新的效率 
+
+
+        
+</code></pre>
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/05">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/20</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Vue">Vue</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
         
         <article class="index-post">
             <a class="abstract-title" href="/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/">
@@ -590,7 +655,20 @@ Object.defineProperty(obj,&#39;name&#39;,&#123;
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -603,7 +681,7 @@ Object.defineProperty(obj,&#39;name&#39;,&#123;
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -617,6 +695,12 @@ Object.defineProperty(obj,&#39;name&#39;,&#123;
             <div class="archive-year"> 2019 </div>
             <ul class="year-list">
             
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/20</span>
+            <a class="archive-post-title" href="/2019/10/20/vue%E4%B8%AD%E7%9A%84diff%E7%AE%97%E6%B3%95%E5%92%8C%E8%99%9A%E6%8B%9Fdom/">vue中的diff算法和虚拟dom</a>
+        </li>
+    
         
         <li class="archive-post-item">
             <span class="archive-post-date">08/16</span>
