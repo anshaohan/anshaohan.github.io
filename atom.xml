@@ -175,6 +175,35 @@
   </entry>
   
   <entry>
+    <title>水平居中的方法</title>
+    <link href="https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/"/>
+    <id>https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</id>
+    <published>2018-10-10T00:35:46.000Z</published>
+    <updated>2022-10-05T14:40:26.525Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>实现居中方法分为两大类</p><p>​居中元素的宽高已知</p><p>​居中元素宽高未知</p><p>​实现方式</p><h3 id="​利用定位-margin-auto"><a href="#​利用定位-margin-auto" class="headerlink" title="​利用定位+margin:auto"></a>​利用定位+margin:auto</h3><style>    .father{        width:500px;        height:300px;        border:1px solid #0a3b98;        position: relative;    }    .son{        width:100px;        height:40px;        background: #f0a238;        position: absolute;        top:0;        left:0;        right:0;        bottom:0;        margin:auto;    }</style><p>父级设置为相对定位 子级绝对定位 并且4个定位属性的值都设置了0<br>如果子级没有设置宽高则会被拉开到和父级一样的宽高</p><h3 id="利用定位-margin-负值"><a href="#利用定位-margin-负值" class="headerlink" title="利用定位+margin:负值"></a>利用定位+margin:负值</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;        margin-left:-50px;        margin-top:-50px;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="利用定位-transfrom"><a href="#利用定位-transfrom" class="headerlink" title="利用定位+transfrom"></a>利用定位+transfrom</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;  transform: translate(-50%,-50%);        width: 100px;        height: 100px;        background: red;    }</style><h3 id="table布局"><a href="#table布局" class="headerlink" title="table布局"></a>table布局</h3><style>    .father {        display: table-cell;        width: 200px;        height: 200px;        background: skyblue;        vertical-align: middle;        text-align: center;    }    .son {        display: inline-block;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><style>    .father {        display: flex;        justify-content: center;        align-items: center;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        width: 100px;        height: 100px;        background: red;    }</style><h3 id="grid布局"><a href="#grid布局" class="headerlink" title="grid布局"></a>grid布局</h3><style>    .father {            display: grid;            align-items:center;            justify-content: center;            width: 200px;            height: 200px;            background: skyblue;        }        .son {            width: 10px;            height: 10px;            border: 1px solid red        }</style>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;实现居中方法分为两大类&lt;/p&gt;
+&lt;p&gt;​		居中元素的宽高已知&lt;/p&gt;
+&lt;p&gt;​		居中元素宽高未知&lt;/p&gt;
+&lt;p&gt;​		实现方式&lt;/p&gt;
+&lt;h3 id=&quot;​利用定位-margin-auto&quot;&gt;&lt;a href=&quot;#​利用定位-</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>webpack 类似的打包工具有哪些？</title>
     <link href="https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
     <id>https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
