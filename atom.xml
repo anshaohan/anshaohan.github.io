@@ -3,11 +3,11 @@
   <title>Hexo</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://anshaohan.github.io/"/>
   <updated>2022-10-04T11:30:59.165Z</updated>
-  <id>http://example.com/</id>
+  <id>https://anshaohan.github.io/</id>
   
   <author>
     <name>AnShaoHan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Vue 双向数据绑定原理</title>
-    <link href="http://example.com/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/"/>
-    <id>http://example.com/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/</id>
+    <link href="https://anshaohan.github.io/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/"/>
+    <id>https://anshaohan.github.io/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/</id>
     <published>2019-08-16T11:09:31.000Z</published>
     <updated>2022-10-04T11:30:59.165Z</updated>
     
@@ -27,14 +27,14 @@
     
     
     
-    <category term="Vue" scheme="http://example.com/tags/Vue/"/>
+    <category term="Vue" scheme="https://anshaohan.github.io/tags/Vue/"/>
     
   </entry>
   
   <entry>
     <title>Css盒子模型</title>
-    <link href="http://example.com/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
-    <id>http://example.com/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
+    <link href="https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
     <published>2019-02-16T11:09:31.000Z</published>
     <updated>2022-10-04T11:29:05.638Z</updated>
     
@@ -56,7 +56,31 @@
     
     
     
-    <category term="Css" scheme="http://example.com/tags/Css/"/>
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack 类似的打包工具有哪些？</title>
+    <link href="https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
+    <id>https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
+    <published>2018-10-05T01:32:19.000Z</published>
+    <updated>2022-10-05T01:33:10.039Z</updated>
+    
+    <content type="html"><![CDATA[<p>​rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多</p><p>​优点  代码更简洁  效率更高   默认支持 tree-shaking</p><p>​缺点就是 加载其他类型的资源文件或者是导入commonjs模块</p><p>​编译es新特性等等一些需求需要使用插件来完成 会使开发效率降低</p><p>​但是在打包js库时 rollup比webpack更有优势  打包代码更小更快</p><p>​parcel  </p><p>​相比于webpack来说用法更简单 支持自动安装依赖，并且不需要配置什么，因为时多线程所以构建速度也会比webpack快，但是无法向webpack一样配置对应的loader</p><p>​snowpack</p><p>​每次保存单个文件时 为应用程序每个文件构建一次，就可以永久缓存 文件更改时 snowpack 会重新构建该文件</p><p>​Vite</p><p>​是一种新型前端构建工具 能显著的提升前端开发体验</p><p>​两部分组成</p><p>​一个开发服务器</p><p>​一套构建指令  使用rollup 来打包你的代码  并且不需要自己配置</p><p>​就可以输出用于生产环境的优化过的静态资源</p><p>​快速的冷启动 、即时的模块热更新 真正的按需编译</p><p>​vite会直接启动开发服务器 不需要进行打包操作 也就意味着不需要分析 模块之间的依赖 不需要编译 所以启动速度很快</p><p>​当修改一个模块时只需要然浏览器重新请求这个模块 不需要像webpack那样需要把该模块的相关依赖全部编译 效率相对来说更高</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;​	rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多&lt;/p&gt;
+&lt;p&gt;​			优点  代码更简洁  效率更高   默认支持 tree-shaking&lt;/p&gt;
+&lt;p&gt;​			缺点就是 加载其他类型的</summary>
+      
+    
+    
+    
+    
+    <category term="webpack" scheme="https://anshaohan.github.io/tags/webpack/"/>
     
   </entry>
   
