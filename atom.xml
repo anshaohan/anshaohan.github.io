@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-05T11:54:07.511Z</updated>
+  <updated>2022-10-05T14:28:32.648Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>for in 和 for of的区别</title>
+    <link href="https://anshaohan.github.io/2020/02/05/for-in-%E5%92%8C-for-of%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://anshaohan.github.io/2020/02/05/for-in-%E5%92%8C-for-of%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2020-02-05T12:26:30.000Z</published>
+    <updated>2022-10-05T14:28:32.648Z</updated>
+    
+    <content type="html"><![CDATA[<p>for in  和 for of 的区别<br>    for of 是es6 新增的 允许遍历一个 有interator接口的数据结构 与es3中的<br>    for in的区别<br>        for in  遍历获取的是对象的键值  而for of 遍历获取的是对象的键名<br>        for in 是遍历整个对象 还有对象的原型链<br>        for of  是只遍历 对象的值 不遍历对象的原型链<br>        对于数组的遍历<br>        for in 会返回数组的可枚举属性 包括原型链的可枚举属性<br>        for of 只会返回数组下标对应的属性值<br>        总结就是 for in 主要是为了遍历对象而生的 不适用遍历数组<br>        而for of 可以遍历数组 字符串 等等的一些仅获取值的对象</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;for in  和 for of 的区别&lt;br&gt;    for of 是es6 新增的 允许遍历一个 有interator接口的数据结构 与es3中的&lt;br&gt;    for in的区别&lt;br&gt;        for in  遍历获取的是对象的键值  而for of 遍历获取的是对象的键名&lt;br&gt;        for in 是遍历整个对象 还有对象的原型链&lt;br&gt;        for of  是只遍历 对象的值 不遍历对象的原型链&lt;br&gt;        对于数组的遍历&lt;br&gt;        for in 会返回数组的可枚举属性 包括原型链的可枚举属性&lt;br&gt;        for of 只会返回数组下标对应的属性值&lt;br&gt;        总结就是 for in 主要是为了遍历对象而生的 不适用遍历数组&lt;br&gt;        而for of 可以遍历数组 字符串 等等的一些仅获取值的对象&lt;/p&gt;
+</summary>
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>vue中的diff算法和虚拟dom</title>
@@ -67,6 +89,32 @@
   </entry>
   
   <entry>
+    <title>前端工程化</title>
+    <link href="https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
+    <id>https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</id>
+    <published>2019-02-20T02:08:13.000Z</published>
+    <updated>2022-10-05T14:15:44.013Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>前端工程化可以分成四个方面来说，分别为模块化、组件化、规范化和自动化。</p><h5 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h5><p>模块化是指将一个文件拆分成多个相互依赖的文件，最后进行统一的打包和加载，这样能够很好的保证高效的多人协作。其中包含</p><p>JS 模块化：CommonJS、AMD、CMD 以及 ES6 Module。<br>CSS 模块化：Sass、Less、Stylus、BEM、CSS Modules 等。其中预处理器和 BEM 都会有的一个问题就是样式覆盖。而 CSS Modules 则是通过 JS 来管理依赖，最大化的结合了 JS 模块化和 CSS 生态，比如 Vue 中的 style scoped。<br>资源模块化：任何资源都能以模块的形式进行加载，目前大部分项目中的文件、CSS、图片等都能直接通过 JS 做统一的依赖关系处理。</p><h5 id="组件化"><a href="#组件化" class="headerlink" title="组件化"></a>组件化</h5><p>不同于模块化，模块化是对文件、对代码和资源拆分，而组件化则是对 UI 层面的拆分。</p><p>通常，我们会需要对页面进行拆分，将其拆分成一个一个的零件，然后分别去实现这一个个零件，最后再进行组装。 在我们的实际业务开发中，对于组件的拆分我们需要做不同程度的考量，其中主要包括细粒度和通用性这两块的考虑。 对于业务组件，你更多需要考量的是针对你负责业务线的一个适用度，即你设计的业务组件是否成为你当前业务的 “通用” 组件。</p><h5 id="规范化"><a href="#规范化" class="headerlink" title="规范化"></a>规范化</h5><p>正所谓无规矩不成方圆，一些好的规范则能很好的帮助我们对项目进行良好的开发管理。规范化指的是我们在工程开发初期以及开发期间制定的系列规范，其中又包含了</p><p>项目目录结构<br>编码规范：对于编码这块的约束，一般我们都会采用一些强制措施，比如 ESLint、StyleLint 等。<br>联调规范<br>文件命名规范<br>样式管理规范：目前流行的样式管理有 BEM、Sass、Less、Stylus、CSS Modules 等方式。<br>git flow 工作流：其中包含分支命名规范、代码合并规范等。<br>定期 code review … 等等</p><h5 id="自动化"><a href="#自动化" class="headerlink" title="自动化"></a>自动化</h5><p>从最早先的 grunt、gulp 等，再到目前的 webpack、parcel。这些自动化工具在自动化合并、构建、打包都能为我们节省很多工作。而这些只是前端自动化其中的一部分，前端自动化还包含了持续集成、自动化测试等方方面面。</p><p>以上就是我所了解的前端工程化，以工程的角度去理解我们的web前端。工程是工程，而不是某项技术。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;前端工程化可以分成四个方面来说，分别为模块化、组件化、规范化和自动化。&lt;/p&gt;
+&lt;h5 id=&quot;模块化&quot;&gt;&lt;a href=&quot;#模块化&quot; class=&quot;headerlink&quot; title=&quot;模块化&quot;&gt;&lt;/a&gt;模块化&lt;/h5&gt;&lt;p</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Css盒子模型</title>
     <link href="https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
     <id>https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
@@ -93,6 +141,33 @@
     
     
     <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深浅拷贝</title>
+    <link href="https://anshaohan.github.io/2018/12/05/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    <id>https://anshaohan.github.io/2018/12/05/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
+    <published>2018-12-05T14:16:51.000Z</published>
+    <updated>2022-10-05T14:25:41.609Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>浅拷贝简单来说 拷贝的是对象再栈中的值 或者引用数据类型的指向内存空间<br>也就是说 浅拷贝的基本数据类型不会互相影响  但是引用数据类型就会进行一个互相影响 源对象发生变化之后 拷贝对象也会跟着变化</p><p>深拷贝就是 拷贝的是对象的整体 并且返回一个新的对象 并且新对象是新开辟一个内存空间 两个对象之间并不会互相影响</p><p>实现深拷贝的一些方法</p><p>循环递归</p><p>function deepclone(obj) {<br>      &#x2F;&#x2F; 判断是什么类型的数据<br>      if (typeof obj !&#x3D;&#x3D; “object” || obj &#x3D;&#x3D; null) return obj;<br>      &#x2F;&#x2F; 定义复制对象<br>      let copy &#x3D; {};<br>      &#x2F;&#x2F; 如果传入的是数组则copy定义为数组<br>      if(obj.constructor&#x3D;&#x3D;Array){<br>        copy &#x3D; []<br>      }<br>      for (key in obj) {<br>        console.log(obj[key]);<br>        &#x2F;&#x2F; deepclone(arr[i])<br>        copy[key] &#x3D; deepclone(obj[key])<br>      }<br>      return copy<br>    }</p><p>使用 JSON 中的  stringfiy 和 parse 方法 来将 对象进行解析成json字符串 然后再解析回来 就可以实现一个深拷贝对象</p><p>使用 loadsh第三方库中的 deepclone 这个方法就可以实现对象的深拷贝</p><p>需要注意的是 es6新增的一个 扩展运算符  当对象是仅一层的时候是 一个深拷贝  超过一层之后就是浅拷贝<br>和扩展运算符差不多的是 object中的 assign这个 方法 也是仅一层时是深拷贝 超过一层就是浅拷贝</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;浅拷贝简单来说 拷贝的是对象再栈中的值 或者引用数据类型的指向内存空间&lt;br&gt;也就是说 浅拷贝的基本数据类型不会互相影响  但是引用数据类型就会进行一个互相影响 源对象发生变化之后 拷贝对象也会跟着变化&lt;/p&gt;
+&lt;p&gt;深拷贝</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
     
   </entry>
   
@@ -147,6 +222,34 @@
     
     
     <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML5新增的特性和标签</title>
+    <link href="https://anshaohan.github.io/2018/05/22/HTML5%E6%96%B0%E5%A2%9E%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E6%A0%87%E7%AD%BE/"/>
+    <id>https://anshaohan.github.io/2018/05/22/HTML5%E6%96%B0%E5%A2%9E%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E6%A0%87%E7%AD%BE/</id>
+    <published>2018-05-22T04:08:13.000Z</published>
+    <updated>2022-10-05T14:13:26.017Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><pre><code>   HTML5新增        标签新增了一套页面布局的标签            &lt;header&gt;头部&lt;/header&gt;            &lt;nav&gt;导航&lt;/nav&gt;            &lt;main&gt;内容&lt;/main&gt;            &lt;asdie&gt;侧边栏&lt;/asdie&gt;            &lt;footer&gt;底部&lt;/footer&gt;            &lt;article&gt;博客 文章 帖子等&lt;/article&gt;            &lt;section&gt;章节 独立的一块 相当于无语义的div&lt;section&gt;            &lt;video&gt;视频&lt;/video&gt;            &lt;audio&gt;音频&lt;/audio&gt;            &lt;figure&gt;用于对元素组合 多用于图片和图片描述&lt;/figure&gt;            &lt;mark&gt;主要用来在视觉上向用户呈现那些需要突出的文字&lt;/mark&gt;            &lt;details&gt;描述&lt;summary&gt;描述的标题&lt;/summary&gt;&lt;/details&gt;            &lt;meter&gt;进度条&lt;/meter&gt;            &lt;progress&gt;也可以理解为 进度条&lt;/progress&gt;                &lt;datalist&gt;下拉框&lt;option&gt;item&lt;/option&gt;&lt;/datalist&gt;             &lt;canvas&gt;画布&lt;/canvas&gt;</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;pre&gt;&lt;code&gt;   HTML5新增
+        标签新增了一套页面布局的标签
+            &amp;lt;header&amp;gt;头部&amp;lt;/header&amp;gt;
+            &amp;lt;nav&amp;gt;导航&amp;l</summary>
+      
+    
+    
+    
+    <category term="HTML" scheme="https://anshaohan.github.io/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://anshaohan.github.io/tags/HTML/"/>
     
   </entry>
   
