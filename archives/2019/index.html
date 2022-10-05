@@ -427,7 +427,6 @@
         
         
             
-            
         
         <article class="index-post">
             <a class="abstract-title" href="/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/">
@@ -435,23 +434,10 @@
                 <span class="abstract-title-text">Vue 双向数据绑定原理</span>
             </a>
             <div class="abstract-content">
-                <p>双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。<br>其中 数据劫持就是使用 object.defineProperty 来实现 对data中的数据进行循环绑定 每个属性身上都会有一个 getter 和 setter方法</p>
-<p>实现一个简单的数据响应</p>
-<p>Object.defineProperty(obj,’name’,{<br>    get:function(){<br>        &#x2F;&#x2F; 获取数据<br>        return obj.name<br>    },<br>    set:function(val){<br>        &#x2F;&#x2F; 获取到新的值并且赋值给对象属性<br>        obj.name &#x3D; val<br>    }<br>})</p>
-<p>这样就可以实现一个简单的数据响应式<br>当然这是vue2中的数据响应式<br>更新过程<br>    1. new Mvvm()   &#x2F;&#x2F; 创建一个vue实例<br>    2. 同时两个对象进行编译  observer对象 来遍历data中的数据给data中的每一项数据都绑定一个getter 和setter方法<br>       compile 对象进行编译模板 然后进行初始化视图 和 绑定订阅者然后订阅数据变化 并且绑定更新函数<br>    3. wacther对象 是一个依赖收集的作用 每个属性身上都会有一个dep对象 当数据发生变化之后 dep会通知wecther去派发更新调用update方法 来实现数据的响应式</p>
-<p>vue2 中的数据响应式的话是有缺点的<br>    首先 vue2中的数据响应式监听不到对 对象的操作  删除 添加 因为监听的是对象的属性而不是对象 然后就会有一些问题<br>    比如 对象添加一个属性 为什么这个属性不是响应式的<br>        那是因为vue的数据劫持是在初始化时 绑定到我们的属性 你去新增一个对象属性 1是监听不到对象的变化 2是 属性身上并没有getter 和 setter属性<br>    第二点就是  对于数组的一个监听  同理 监听的是对象的属性  数组的话也是引用数据类型 并且如果使用数组下标去操作数组 也是监听不到的 但是使用数组身上的方法就可以被监听到<br>    相对于对象来说 怎么去解决   vue2中也是有相应的一个api  $set $delete 等等一些方法去操作对象 就可以实现对象的响应式<br>vue3 中的响应式是根据 es6新增的Proxy 构造函数 有代理的意思结合新增的 Reflect  数据反射来实现的数据响应式<br>    概念就是 在目标对象前增加一层拦截  访问对象都会经过这层拦截 可以对外部访问进行过滤和改写  并且返回一个新的对象<br>    vue3中的响应式监听的是对象本身 而不是一个属性  所以当我们对 对象进行操作时都可以被监听到并且实现数据响应</p>
-<pre><code>new Proxy(obj,&#123;
-    get:function(target,key,proxy)&#123;  // 三个参数  目标  属性名称  proxy实例本身
-        const res = Reflect.get(target,key,proxy) // 通过Reflect 反射出去
-        return res
-    &#125;,
-    set:function(target,key,value,proxy)&#123;  // 四个参数 目标  属性名称 proxy实例本身
-        const res = Reflect.get(target,key，value,proxy) // 通过Reflect 更新新的值 反射出去 
-        return res
-    &#125;
-&#125;)
-</code></pre>
-
+                
+双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。其中 数据劫持就是使用 object.defineProperty 来实现 对data中的数据进行循环绑定 每个属性身上都会有一个 getter 和 setter方法
+实现一个简单的数据响应
+Object.defineProperty(obj,’name’,{    get:function(){        &#x2F;&#x2F; 获取数据        ret...
             </div>
             <!-- read more -->
             
@@ -479,7 +465,6 @@
         
         
             
-            
         
         <article class="index-post">
             <a class="abstract-title" href="/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
@@ -487,24 +472,24 @@
                 <span class="abstract-title-text">Css盒子模型</span>
             </a>
             <div class="abstract-content">
-                <p>标准盒子模型： </p>
-<ul>
-<li>content（内容）</li>
-<li>margin（外边距） ：盒子与盒子之间的距离。</li>
-<li>padding（内边距）：内容与边框的距离。</li>
-<li>border（边框）</li>
-</ul>
-<p>盒子总宽度 &#x3D; width + padding + border + margin;</p>
-<p>盒子总高度 &#x3D; height + padding + border + margin</p>
-<p> 也就是，<code>width/height</code> 只是内容高度，不包含 <code>padding</code> 和 <code>border</code>值 </p>
-<p>IE盒子模型（怪异盒模型）</p>
-<ul>
-<li>content </li>
-<li>margin</li>
-</ul>
-<p>盒子总宽度 &#x3D; width + margin;</p>
-<p>盒子总高度 &#x3D; height + margin;</p>
-<p> 也就是，<code>width/height</code> 包含了 <code>padding</code>和 <code>border</code>值 </p>
+                
+标准盒子模型： 
+
+content（内容）
+margin（外边距） ：盒子与盒子之间的距离。
+padding（内边距）：内容与边框的距离。
+border（边框）
+
+盒子总宽度 &#x3D; width + padding + border + margin;
+盒子总高度 &#x3D; height + padding + border + margin
+ 也就是，width/height 只是内容高度，不包含 padding 和 border值 
+IE盒子模型（怪异盒模型）
+
+content 
+margin
+
+盒子总宽度 &#x3D; width + margin;
+盒子总高度 &#x...
             </div>
             <!-- read more -->
             
@@ -750,9 +735,9 @@
                 Vue
             </span>
         
-            <span class="sidebar-tag-name" data-tags="Js - 防抖和节流">
+            <span class="sidebar-tag-name" data-tags="Js">
                 <span class="iconfont-archer">&#xe606;</span>
-                Js - 防抖和节流
+                Js
             </span>
         
     </div>
