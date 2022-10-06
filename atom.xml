@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-05T14:31:07.485Z</updated>
+  <updated>2022-10-06T02:02:42.535Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>typeof 与 instanceof 区别</title>
+    <link href="https://anshaohan.github.io/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/"/>
+    <id>https://anshaohan.github.io/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/</id>
+    <published>2020-04-26T11:58:04.000Z</published>
+    <updated>2022-10-06T02:02:42.535Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p> typeof 只有6种返回值  number  string   Boolean  object  function undefined</p><p>​typeof 操作符返回一个字符串,表示未经计算的操作数的类型</p><p>虽然 typeof null 为 object  这是javaScript 一个悠久的Bug 不代表null 就是引用数据类型 并且null 本身也不是对象 所以 null在typeof之后返回的是有问题的结果</p><p>​instanceof  运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上</p><p>​实现原理 顺着原型链去找,直到找到相同的原型对象,返回true , 否则为 false</p><p>​  typeof 与 instanceof 都是判断数据类型的方法 区别如下</p><p>​typeof 会返回一个变量的基本类型,instanceof,返回的是一个布尔值</p><p>​instanceof 可以准确地判断复杂引用数据类型,但是不能正确判断基础数据类型</p><p>​typeof 也存在弊端 虽然可以判断基础数据类型 null除外</p><p>​但是引用数据类型中,除了function 类型以外,其他的也无法判断</p><p>​如果需要通用检测数据类型，可以采用<code>Object.prototype.toString</code>，调用该方法，统一返回格式<code>“[object Xxx]”</code>的字符串</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+
+
+&lt;p&gt; typeof 只有6种返回值  number  string   Boolean  object  function undefined&lt;/p&gt;
+&lt;p&gt;​							typeof 操作符返回一个字符串,表示未经计算的</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>for in 和 for of的区别</title>
@@ -88,6 +117,34 @@
     
     
     <category term="Vue" scheme="https://anshaohan.github.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css选择器有哪些？优先级？哪些属性可以继承?</title>
+    <link href="https://anshaohan.github.io/2019/05/06/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF/"/>
+    <id>https://anshaohan.github.io/2019/05/06/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF/</id>
+    <published>2019-05-06T01:48:12.000Z</published>
+    <updated>2022-10-06T01:49:47.187Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>选择器：</p><p>​id选择器、类选择器、标签选择器、后代选择器、子选择器、相邻同胞选择器、群组选择器、</p><p>​还有一些不常用的选择器：</p><p>​伪类选择器、伪元素选择器，属性选择器</p><p>​css3 中新增的选择器：</p><p>​层次选择器，伪类选择器 （新增属性）、属性选择器（新增属性）</p><p>​优先级：</p><p>​！important  &gt; 内联&gt;类选择器&gt;标签选择器</p><p>​继承属性：</p><p>​字体系列属性：</p><p>​font  </p><p>​font-family  规定元素的字体系列</p><p>​font-weight 设置字体的粗细</p><p>​font-size 设置字体的尺寸</p><p>​font-style 定义字体的风格</p><p>​font-variant 偏大或偏小的字体</p><p>​文本系列属性</p><p>​text-indent 文本缩进</p><p>​text-align 文本水平对刘</p><p>​line-height 行高</p><p>​word-spacing 增加或减少单词见的空白</p><p>​letter-spacing 增加或减少字符间的空白</p><p>​text-transform 控制文本大小写</p><p>​direction 规定文本的书写方向</p><p>​color 文本颜色</p><p>​元素可见性  visibility </p><p>​表格布局属性</p><p>​caption-side 定位表格标题位置</p><p>​border-collapse 合并表格边框</p><p>​border-spacing 设置相邻单元格的边框间的距离</p><p>​empty-cells 单元格的边框的出现与消失</p><p>​table-layout 表格的宽度由什么决定</p><p>​列表属性</p><p>​list-style-type 文字前面的小点点样式</p><p>​list-style-position 小点点位置</p><p>​ list-style 以上的属性可以通过这个属性集合</p><p>​引用 qoutes 设置嵌套引用的引号类型</p><p>​光标属性 cursor 箭头可以变成需要的形状</p><p>​继承中比较特殊的几点</p><p>​a标签的字体颜色不能被继承</p><p>​h1-h6的字体大小也是不能被继承的</p><p>​无继承的属性</p><p>​dispaly</p><p>​文本属性 vertical-align、text-decoration</p><p>​盒子模型属性 宽度 高度 内外边距 边框</p><p>​背景属性 背景图片 颜色 位置</p><p>​定位属性  浮动 清楚浮动  定位position 等</p><p>​生成内容属性 content couter-reset  counter-increment</p><p>​轮廓样式属性 outline-style </p><p>​页面样式属性 size  page-break-before  page-break-after</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;选择器：&lt;/p&gt;
+&lt;p&gt;​							id选择器、类选择器、标签选择器、后代选择器、子选择器、相邻同胞选择器、群组选择器、&lt;/p&gt;
+&lt;p&gt;​				还有一些不常用的选择器：					&lt;/p&gt;
+&lt;p&gt;​						伪类选择器、</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
     
   </entry>
   
@@ -179,7 +236,7 @@
     <link href="https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/"/>
     <id>https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</id>
     <published>2018-10-10T00:35:46.000Z</published>
-    <updated>2022-10-05T14:40:26.525Z</updated>
+    <updated>2022-10-05T23:48:48.570Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span><p>实现居中方法分为两大类</p><p>​居中元素的宽高已知</p><p>​居中元素宽高未知</p><p>​实现方式</p><h3 id="​利用定位-margin-auto"><a href="#​利用定位-margin-auto" class="headerlink" title="​利用定位+margin:auto"></a>​利用定位+margin:auto</h3><style>    .father{        width:500px;        height:300px;        border:1px solid #0a3b98;        position: relative;    }    .son{        width:100px;        height:40px;        background: #f0a238;        position: absolute;        top:0;        left:0;        right:0;        bottom:0;        margin:auto;    }</style><p>父级设置为相对定位 子级绝对定位 并且4个定位属性的值都设置了0<br>如果子级没有设置宽高则会被拉开到和父级一样的宽高</p><h3 id="利用定位-margin-负值"><a href="#利用定位-margin-负值" class="headerlink" title="利用定位+margin:负值"></a>利用定位+margin:负值</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;        margin-left:-50px;        margin-top:-50px;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="利用定位-transfrom"><a href="#利用定位-transfrom" class="headerlink" title="利用定位+transfrom"></a>利用定位+transfrom</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;  transform: translate(-50%,-50%);        width: 100px;        height: 100px;        background: red;    }</style><h3 id="table布局"><a href="#table布局" class="headerlink" title="table布局"></a>table布局</h3><style>    .father {        display: table-cell;        width: 200px;        height: 200px;        background: skyblue;        vertical-align: middle;        text-align: center;    }    .son {        display: inline-block;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><style>    .father {        display: flex;        justify-content: center;        align-items: center;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        width: 100px;        height: 100px;        background: red;    }</style><h3 id="grid布局"><a href="#grid布局" class="headerlink" title="grid布局"></a>grid布局</h3><style>    .father {            display: grid;            align-items:center;            justify-content: center;            width: 200px;            height: 200px;            background: skyblue;        }        .son {            width: 10px;            height: 10px;            border: 1px solid red        }</style>]]></content>
     
@@ -226,6 +283,34 @@
     
     
     <category term="webpack" scheme="https://anshaohan.github.io/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说JavaScript中的数据类型</title>
+    <link href="https://anshaohan.github.io/2018/09/06/%E8%AF%B4%E8%AF%B4JavaScript%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>https://anshaohan.github.io/2018/09/06/%E8%AF%B4%E8%AF%B4JavaScript%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2018-09-06T01:50:04.000Z</published>
+    <updated>2022-10-06T01:51:40.902Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>js中的数据类型分为两种 基本数据类型 和 引用数据类型<br>两种类型的区别是:储存位置不同</p><p>​基本类型:</p><p>​Number,String,Boolean,Undefined,null,symbol</p><p>​引用数据类型:</p><p>​统称为Object ,</p><p>​Object,Array,Function,Date,RegExp,Map,Set等</p><p>​存储区别:</p><p>​基本数据类型存储在栈中,</p><p>​引用类型的对象储存于堆中,</p><p>​当变量赋值时,解析器首先要确认的就是这个值是基本类型值还是引用类型值</p><p>​声明变量时不同的内存地址分配:</p><p>​简单类型的值存放在栈中,在栈中存放的时对应的值</p><p>​引用类型对应的值存储在堆中,在栈中存放的是指向堆内存的地址</p><p>​不同的类型数据导致赋值变量时的不同:</p><p>​简单类型赋值,是生成相同的值,两个对象不同的地址</p><p>​复杂类型赋值,是将保存对象的内存地址赋值给另一个变量,也就是两个变量指向堆内存中同一个对象</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;js中的数据类型分为两种 基本数据类型 和 引用数据类型&lt;br&gt;两种类型的区别是:储存位置不同&lt;/p&gt;
+&lt;p&gt;​				基本类型:&lt;/p&gt;
+&lt;p&gt;​						Number,String,Boolean,Undefined,</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
     
   </entry>
   
