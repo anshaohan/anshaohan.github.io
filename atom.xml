@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-06T02:02:42.535Z</updated>
+  <updated>2022-10-06T02:28:33.156Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,6 +15,61 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何通过js判断一个数组</title>
+    <link href="https://anshaohan.github.io/2022/10/06/%E5%A6%82%E6%9E%9C%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84/"/>
+    <id>https://anshaohan.github.io/2022/10/06/%E5%A6%82%E6%9E%9C%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84/</id>
+    <published>2022-10-06T02:28:03.000Z</published>
+    <updated>2022-10-06T02:28:33.156Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​<strong>通过原型链判断</strong></p><p>​__ proto __</p><p>​实例的__ proto__属性指向其构造函数的原型对象.</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="property">__proto__</span> === <span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>)  <span class="comment">// true</span></span><br></pre></td></tr></table></figure><p>​constructor</p><p>​实例的constructor属性指向构造函数本身</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr.<span class="property">constructor</span> === <span class="title class_">Array</span>)  <span class="comment">// true</span></span><br></pre></td></tr></table></figure><p>​instanceof</p><p>​instanceof可以判断Array是否是实例的构造函数（在原型链上即可）</p><p>​isPrototypeOf()</p><p>​判断Array的原型对象是否为在某个对象的原型链上</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Array</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="title function_">isPrototypeOf</span>(arr) )  <span class="comment">// true</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arr = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr <span class="keyword">instanceof</span> <span class="title class_">Array</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure><p>​通过Object原型上的方法判断</p><p>​Array.isArray()</p><p>​es6中用于判断数组类型的方法</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(arr <span class="keyword">instanceof</span> <span class="title class_">Array</span>) <span class="comment">// true</span></span><br></pre></td></tr></table></figure><p>​Object.prototype.toString</p><p>​Object原型对象上的方法，被所有对象继承，返回<code>&#39;[Object type]&#39;</code>字符串</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>(arr))  <span class="comment">// [object Array]</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​	&lt;strong&gt;通过原型链判断&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​						__ proto __&lt;/p&gt;
+&lt;p&gt;​								实例的__ proto__属性指向其构造函数的原型对象.&lt;/p&gt;
+&lt;figure cla</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么是响应式设计</title>
+    <link href="https://anshaohan.github.io/2021/08/16/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://anshaohan.github.io/2021/08/16/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/</id>
+    <published>2021-08-16T02:08:50.000Z</published>
+    <updated>2022-10-06T02:24:34.901Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>响应式设计是一种网络页面设计布局 页面的开发和设计 应该根据用户的行为和设备大小 来做出相应的响应和调整</p><p>​响应式网站常见的特点：</p><p>​同时适配pc+平板+手机等</p><p>​标签导航在接近手持终端设备时改变为经典的抽屉式导航</p><p>​网站的布局会根据视口来调整模块的大小和位置</p><p>​实现方式</p><p>​原理  通过媒体查询检测不同的设备屏幕尺寸做处理，为了处理移动端，页面头部必须有meta声明viewport</p><p>​实现响应式布局方式</p><p>​媒体查询</p><p>​给不同分辨率的设备编写不同的样式来实现响应式布局，可以给不同分辨率的屏幕设置不同的样式</p><p>​百分比</p><p>​通过百分比单位来实现响应式的效果</p><p>​可以让组件随着浏览器的宽度和高度变化而变化从而实现响应式布局，有些元素并不继承父元素的尺寸 所以并不建议使用百分比实现响应式</p><p>​vw&#x2F;vh</p><p>​vw表示相对于视图窗口的宽度，vh表示相对于视图窗口的高度，任意层级元素，在使用vw单位的情况下。1vw都等于视图宽度的百分之一</p><p>​rem</p><p>​rem 相当于根元素html的font-size属性，默认浏览器字体大小为16px 所以 1rem &#x3D; 16px</p><p>​还可以利用ui框架 的栅格布局实现响应式</p><p>​响应式设计通常会从以下几个方面思考：</p><p>​弹性盒子 和媒体查询等技术</p><p>​使用百分比布局创建流式布局的弹性ui同时使用媒体查询限制元素的尺寸和内容变更范围</p><p>​使用相对单位使得内容自适应调节</p><p>​选择断点针对不同断点实现不同的布局和内容展示</p><p>​总结</p><p>​响应式布局的优点</p><p>​面对不同分辨率设备灵活性强</p><p>​能够快捷解决多设备显示适应问题</p><p>​缺点</p><p>​仅适用布局、信息、框架、并不复杂的部门类型网站</p><p>​兼容各种设备工作量大，效率低下</p><p>​代码累赘，会出现隐藏无用的元素，加载时间加长</p><p>​一种折中性的设计解决方案，多方面因素影响而达不到最佳效果，</p><p>​一定程度上改变了网站原有的布局结构，会出现用户混淆的情况</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;响应式设计是一种网络页面设计布局 页面的开发和设计 应该根据用户的行为和设备大小 来做出相应的响应和调整&lt;/p&gt;
+&lt;p&gt;​						响应式网站常见的特点：&lt;/p&gt;
+&lt;p&gt;​									同时适配pc+平板+手机等&lt;/p&gt;</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
   
   <entry>
     <title>typeof 与 instanceof 区别</title>
@@ -149,6 +204,34 @@
   </entry>
   
   <entry>
+    <title>回流和重绘</title>
+    <link href="https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/"/>
+    <id>https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/</id>
+    <published>2019-04-06T02:08:10.000Z</published>
+    <updated>2022-10-06T02:25:31.535Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：</p><p>​回流：</p><p>​布局引擎根据各种样式计算每个盒子再页面上大小与位置</p><p>​重绘：  </p><p>​当计算好盒子模型的位置、大小及其他属性后，浏览器根据每个盒子特性进行绘制</p><p>​回流触发机制：</p><p>​回流主要式计算节点的位置和几何信息，当页面布局和几何信息发生变化的时候就会触发回流</p><p>​删除或者添加可见的dom元素</p><p>​元素的位置发生变化、元素的尺寸发生变化</p><p>​内容发生变化，比如文本变化或图片被另一个不同尺寸的图片所替代</p><p>​页面一开始渲染的时候（这避免不了）</p><p>​浏览器的窗口尺寸变化（因为回流是根据视口的大小来计算元素的位置和大小的）</p><p>​重绘触发机制：</p><p>​触发回流一定会触发重绘</p><p>​颜色的修改</p><p>​文本方向的修改</p><p>​阴影的修改</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：&lt;/p&gt;
+&lt;p&gt;​								回流：&lt;/p&gt;
+&lt;p&gt;​									布局引擎根据各种样式计算每个盒子再页面上大小与位置&lt;/p&gt;
+&lt;p&gt;​		</summary>
+      
+    
+    
+    
+    <category term="HTML" scheme="https://anshaohan.github.io/categories/HTML/"/>
+    
+    
+    <category term="HTML" scheme="https://anshaohan.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>前端工程化</title>
     <link href="https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
     <id>https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</id>
@@ -201,6 +284,32 @@
     
     
     <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>new操作符具体干了什么</title>
+    <link href="https://anshaohan.github.io/2019/02/06/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/"/>
+    <id>https://anshaohan.github.io/2019/02/06/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/</id>
+    <published>2019-02-06T02:33:26.000Z</published>
+    <updated>2022-10-06T02:36:08.270Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>new操作符概念 在js中用于给定构造函数创建实例对象</p><p>流程<br>    创建一个新的历史对象 obj<br>    将新的实例对象obj绑定到构造函数的原型链上<br>    新的实例对象继承构造函数的this<br>    最后返回一个新对象</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;new操作符概念 在js中用于给定构造函数创建实例对象&lt;/p&gt;
+&lt;p&gt;流程&lt;br&gt;    创建一个新的历史对象 obj&lt;br&gt;    将新的实例对象obj绑定到构造函数的原型链上&lt;br&gt;    新的实例对象继承构造函数的thi</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
     
   </entry>
   

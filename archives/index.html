@@ -429,6 +429,97 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2022/10/06/%E5%A6%82%E6%9E%9C%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84/">
+                
+                <span class="abstract-title-text">如何通过js判断一个数组</span>
+            </a>
+            <div class="abstract-content">
+                
+​	通过原型链判断
+​						__ proto __
+​								实例的__ proto__属性指向其构造函数的原型对象.
+12const arr = [1,2,3]console.log(arr.__proto__ === Array.prototype)  // true
+
+​						constructor
+​								实例的constructor属性指向构造函数本身
+12const arr = [1,2,3]console.log(arr.constructor === Array)  // true
+
+​						instanceof
+​								i...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/10/06</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Js">Js</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2021/08/16/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/">
+                
+                <span class="abstract-title-text">什么是响应式设计</span>
+            </a>
+            <div class="abstract-content">
+                
+响应式设计是一种网络页面设计布局 页面的开发和设计 应该根据用户的行为和设备大小 来做出相应的响应和调整
+​						响应式网站常见的特点：
+​									同时适配pc+平板+手机等
+​									标签导航在接近手持终端设备时改变为经典的抽屉式导航
+​									网站的布局会根据视口来调整模块的大小和位置
+​						实现方式
+​								原理  通过媒体查询检测不同的设备屏幕尺寸做处理，为了处理移动端，页面头部必须有meta声明viewport
+​								实现响应式布局方式
+​									媒体查询
+​											给不同分辨率的设备编...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/16</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Js">Js</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/">
                 
                 <span class="abstract-title-text">typeof 与 instanceof 区别</span>
@@ -632,6 +723,51 @@ Object.defineProperty(obj,&#39;name&#39;,&#123;
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">
+                
+                <span class="abstract-title-text">回流和重绘</span>
+            </a>
+            <div class="abstract-content">
+                
+html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：
+​								回流：
+​									布局引擎根据各种样式计算每个盒子再页面上大小与位置
+​								重绘：  
+​									当计算好盒子模型的位置、大小及其他属性后，浏览器根据每个盒子特性进行绘制
+​							回流触发机制：
+​									回流主要式计算节点的位置和几何信息，当页面布局和几何信息发生变化的时候就会触发回流
+​									删除或者添加可见的dom元素
+​									元素的位置发生变化、元素的尺寸发生变化
+​									内容发生变化，比如文本变...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/06</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="HTML">HTML</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">
                 
                 <span class="abstract-title-text">前端工程化</span>
@@ -707,141 +843,6 @@ margin
     
     
         <a class="post-tag" href="javascript:void(0);" data-tags="Css">Css</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2018/12/05/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/">
-                
-                <span class="abstract-title-text">深浅拷贝</span>
-            </a>
-            <div class="abstract-content">
-                
-
-浅拷贝简单来说 拷贝的是对象再栈中的值 或者引用数据类型的指向内存空间也就是说 浅拷贝的基本数据类型不会互相影响  但是引用数据类型就会进行一个互相影响 源对象发生变化之后 拷贝对象也会跟着变化
-深拷贝就是 拷贝的是对象的整体 并且返回一个新的对象 并且新对象是新开辟一个内存空间 两个对象之间并不会互相影响
-实现深拷贝的一些方法
-循环递归
-function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      if (typeof obj !&#x3D;&#x3D; “object” || obj &#x3D;&#x3D; null) ...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/05">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/12/05</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Js">Js</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/">
-                
-                <span class="abstract-title-text">水平居中的方法</span>
-            </a>
-            <div class="abstract-content">
-                
-实现居中方法分为两大类
-​		居中元素的宽高已知
-​		居中元素宽高未知
-​		实现方式
-​利用定位+margin:auto
-    .father{
-        width:500px;
-        height:300px;
-        border:1px solid #0a3b98;
-        position: relative;
-    }
-    .son{
-        width:100px;
-        height:40px;
-        background: #f0a238;
-        position: absolute;
-...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/06">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/10</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Css">Css</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/">
-                
-                <span class="abstract-title-text">webpack 类似的打包工具有哪些？</span>
-            </a>
-            <div class="abstract-content">
-                
-​	rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多
-​			优点  代码更简洁  效率更高   默认支持 tree-shaking
-​			缺点就是 加载其他类型的资源文件或者是导入commonjs模块
-​			编译es新特性等等一些需求需要使用插件来完成 会使开发效率降低
-​			但是在打包js库时 rollup比webpack更有优势  打包代码更小更快
-​		parcel  
-​			相比于webpack来说用法更简单 支持自动安装依赖，并且不需要配置什么，因为时多线程所以构建速度也会比webpac...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/05">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/10/05</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="webpack">webpack</a>
     
 </div>
 
@@ -1026,7 +1027,59 @@ function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1097,7 +1150,7 @@ function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 13
+        Total : 17
         </div>
         <!-- search  -->
         
@@ -1107,6 +1160,36 @@ function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      
     
         
             
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/06</span>
+            <a class="archive-post-title" href="/2022/10/06/%E5%A6%82%E6%9E%9C%E9%80%9A%E8%BF%87js%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E6%95%B0%E7%BB%84/">如何通过js判断一个数组</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/16</span>
+            <a class="archive-post-title" href="/2021/08/16/%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/">什么是响应式设计</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
             
             <div class="archive-year"> 2020 </div>
             <ul class="year-list">
@@ -1152,6 +1235,12 @@ function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      
     
         
         <li class="archive-post-item">
+            <span class="archive-post-date">04/06</span>
+            <a class="archive-post-title" href="/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">回流和重绘</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
             <span class="archive-post-date">02/20</span>
             <a class="archive-post-title" href="/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">前端工程化</a>
         </li>
@@ -1160,6 +1249,12 @@ function deepclone(obj) {      &#x2F;&#x2F; 判断是什么类型的数据      
         <li class="archive-post-item">
             <span class="archive-post-date">02/16</span>
             <a class="archive-post-title" href="/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">Css盒子模型</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/06</span>
+            <a class="archive-post-title" href="/2019/02/06/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/">new操作符具体干了什么</a>
         </li>
     
         
