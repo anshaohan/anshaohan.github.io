@@ -520,6 +520,87 @@
             
         
         <article class="index-post">
+            <a class="abstract-title" href="/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/">
+                
+                <span class="abstract-title-text">js中变量提升</span>
+            </a>
+            <div class="abstract-content">
+                
+
+js中变量提升概念    在js中如果我们进行先调用 后声明赋值的方式进行使用变量 js中的变量提升就会展现出来    当我们先调用这个变量的时候   这个变量隐式的声明 并且赋值为undefined    然后当我们在下面调用这个变量进行赋值时 就会盖过undefined 变成赋值的那个值
+console.log(num)  //这时会打印出 undefined
+var num = 123 //  这是个赋值过程
+console.log(num) // 打印 123
+
+需要注意的是 变量提升只能使用 var  定义  使用es6新增的let  const的话会之间报错
+
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/11/06</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Js">Js</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2020/09/06/BFC/">
+                
+                <span class="abstract-title-text">BFC布局</span>
+            </a>
+            <div class="abstract-content">
+                
+官方定义：BFC（Block Formatting Context）块格式化上下文， 是Web页面的可视CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。简单来说 BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素BFC的应用    1、自适应两栏布局    2、清除内部浮动    3、防止margin上下重叠
+BFC的布局规则    1、内部的Box会在垂直方向，一个接一个地放置。    2、Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠（按照最大margin值设置）    3...
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/09/06</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Css">Css</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
             <a class="abstract-title" href="/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/">
                 
                 <span class="abstract-title-text">typeof 与 instanceof 区别</span>
@@ -577,6 +658,43 @@ for in  和 for of 的区别    for of 是es6 新增的 允许遍历一个 有in
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2022/10/05">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/05</span>
+                </div>
+                <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Js">Js</a>
+    
+</div>
+
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2020/01/22/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E6%98%AF%E4%BB%80%E4%B9%88/">
+                
+                <span class="abstract-title-text">js模块化开发是什么</span>
+            </a>
+            <div class="abstract-content">
+                
+
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2022/10/06">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/01/22</span>
                 </div>
                 <!-- tags -->
                 
@@ -676,114 +794,23 @@ Object.defineProperty(obj,&#39;name&#39;,&#123;
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2019/05/06/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF/">
+            <a class="abstract-title" href="/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/">
                 
-                <span class="abstract-title-text">css选择器有哪些？优先级？哪些属性可以继承?</span>
+                <span class="abstract-title-text">null和undefined的区别</span>
             </a>
             <div class="abstract-content">
                 
-选择器：
-​							id选择器、类选择器、标签选择器、后代选择器、子选择器、相邻同胞选择器、群组选择器、
-​				还有一些不常用的选择器：					
-​						伪类选择器、伪元素选择器，属性选择器
-​				css3 中新增的选择器：
-​						层次选择器，伪类选择器 （新增属性）、属性选择器（新增属性）
-​						优先级：
-​								！important  &gt; 内联&gt;类选择器&gt;标签选择器
-​						继承属性：
-​							字体系列属性：
-​									font  
-​									font-family  规定元素的字体...
+Undefined类型只有一个值，即undefined。当声明的变量还未被初始化时，变量的默认值为undefined。用法
+变量被声明了，但没有赋值时，就等于undefined。调用函数时，应该提供的参数没有提供，该参数等于undefined。对象没有赋值的属性，该属性的值为undefined。函数没有返回值时，默认返回undefinedNull类型也只有一个值，即null。null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。用法
+作为函数的参数，表示该函数的参数不是对象。作为对象原型链的终点
+
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2022/10/06">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/05/06</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Css">Css</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/">
-                
-                <span class="abstract-title-text">回流和重绘</span>
-            </a>
-            <div class="abstract-content">
-                
-html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：
-​								回流：
-​									布局引擎根据各种样式计算每个盒子再页面上大小与位置
-​								重绘：  
-​									当计算好盒子模型的位置、大小及其他属性后，浏览器根据每个盒子特性进行绘制
-​							回流触发机制：
-​									回流主要式计算节点的位置和几何信息，当页面布局和几何信息发生变化的时候就会触发回流
-​									删除或者添加可见的dom元素
-​									元素的位置发生变化、元素的尺寸发生变化
-​									内容发生变化，比如文本变...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/06">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/04/06</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="HTML">HTML</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/">
-                
-                <span class="abstract-title-text">前端工程化</span>
-            </a>
-            <div class="abstract-content">
-                
-前端工程化可以分成四个方面来说，分别为模块化、组件化、规范化和自动化。
-模块化模块化是指将一个文件拆分成多个相互依赖的文件，最后进行统一的打包和加载，这样能够很好的保证高效的多人协作。其中包含
-JS 模块化：CommonJS、AMD、CMD 以及 ES6 Module。CSS 模块化：Sass、Less、Stylus、BEM、CSS Modules 等。其中预处理器和 BEM 都会有的一个问题就是样式覆盖。而 CSS Modules 则是通过 JS 来管理依赖，最大化的结合了 JS 模块化和 CSS 生态，比如 Vue 中的 style scoped。资源模块化：任何资源都能以模块的形...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/05">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/20</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/05</span>
                 </div>
                 <!-- tags -->
                 
@@ -799,62 +826,10 @@ JS 模块化：CommonJS、AMD、CMD 以及 ES6 Module。CSS 模块化：Sass、L
         </article>
         <div class="index-post-divider"></div>
     
-        
-        
-        
-        
-            
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/">
-                
-                <span class="abstract-title-text">Css盒子模型</span>
-            </a>
-            <div class="abstract-content">
-                
-标准盒子模型： 
-
-content（内容）
-margin（外边距） ：盒子与盒子之间的距离。
-padding（内边距）：内容与边框的距离。
-border（边框）
-
-盒子总宽度 &#x3D; width + padding + border + margin;
-盒子总高度 &#x3D; height + padding + border + margin
- 也就是，width/height 只是内容高度，不包含 padding 和 border值 
-IE盒子模型（怪异盒模型）
-
-content 
-margin
-
-盒子总宽度 &#x3D; width + margin;
-盒子总高度 &#x...
-            </div>
-            <!-- read more -->
-            
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/05">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/02/16</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Css">Css</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
     <!-- paginator  -->
     
         <nav class="page-nav">
-            <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">NEXT &gt;</a>
+            <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" href="/archives/page/2/">NEXT &gt;</a>
         </nav>
     
 </main>
@@ -1047,7 +1022,61 @@ margin
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1150,7 +1179,7 @@ margin
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 17
+        Total : 21
         </div>
         <!-- search  -->
         
@@ -1196,6 +1225,18 @@ margin
             
         
         <li class="archive-post-item">
+            <span class="archive-post-date">11/06</span>
+            <a class="archive-post-title" href="/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/">js中变量提升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span>
+            <a class="archive-post-title" href="/2020/09/06/BFC/">BFC布局</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
             <span class="archive-post-date">04/26</span>
             <a class="archive-post-title" href="/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/">typeof 与 instanceof 区别</a>
         </li>
@@ -1204,6 +1245,12 @@ margin
         <li class="archive-post-item">
             <span class="archive-post-date">02/05</span>
             <a class="archive-post-title" href="/2020/02/05/for-in-%E5%92%8C-for-of%E7%9A%84%E5%8C%BA%E5%88%AB/">for in 和 for of的区别</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/22</span>
+            <a class="archive-post-title" href="/2020/01/22/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E6%98%AF%E4%BB%80%E4%B9%88/">js模块化开发是什么</a>
         </li>
     
         
@@ -1225,6 +1272,12 @@ margin
         <li class="archive-post-item">
             <span class="archive-post-date">08/16</span>
             <a class="archive-post-title" href="/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/">Vue 双向数据绑定原理</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/05</span>
+            <a class="archive-post-title" href="/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/">null和undefined的区别</a>
         </li>
     
         

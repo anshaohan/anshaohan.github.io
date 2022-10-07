@@ -72,13 +72,64 @@
   </entry>
   
   <entry>
+    <title>js中变量提升</title>
+    <link href="https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/"/>
+    <id>https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</id>
+    <published>2020-11-06T03:05:26.000Z</published>
+    <updated>2022-10-06T05:34:33.369Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>js中变量提升概念<br>    在js中如果我们进行先调用 后声明赋值的方式进行使用变量 js中的变量提升就会展现出来<br>    当我们先调用这个变量的时候   这个变量隐式的声明 并且赋值为undefined<br>    然后当我们在下面调用这个变量进行赋值时 就会盖过undefined 变成赋值的那个值</p><pre><code>console.log(num)  //这时会打印出 undefinedvar num = 123 //  这是个赋值过程console.log(num) // 打印 123需要注意的是 变量提升只能使用 var  定义  使用es6新增的let  const的话会之间报错</code></pre>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;js中变量提升概念&lt;br&gt;    在js中如果我们进行先调用 后声明赋值的方式进行使用变量 js中的变量提升就会展现出来&lt;br&gt;    当我们先调用这个变量的时候   这个变量隐式的声明 并且赋值为undefined&lt;br&gt;</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BFC布局</title>
+    <link href="https://anshaohan.github.io/2020/09/06/BFC/"/>
+    <id>https://anshaohan.github.io/2020/09/06/BFC/</id>
+    <published>2020-09-06T06:32:46.000Z</published>
+    <updated>2022-10-06T06:56:15.653Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>官方定义：BFC（Block Formatting Context）块格式化上下文， 是Web页面的可视CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。<br>简单来说 BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素<br>BFC的应用<br>    1、自适应两栏布局<br>    2、清除内部浮动<br>    3、防止margin上下重叠</p><p>BFC的布局规则<br>    1、内部的Box会在垂直方向，一个接一个地放置。<br>    2、Box垂直方向的距离由margin决定。属于同一个BFC的两个相邻Box的margin会发生重叠（按照最大margin值设置）<br>    3、每个元素的margin box的左边， 与包含块border box的左边相接触<br>    4、BFC的区域不会与float box重叠。<br>    5、BFC就是页面上的一个隔离的独立容器，容器里面的子元素不会影响到外面的元素。<br>    6、计算BFC的高度时，浮动元素也参与计算</p><p>如何创建一个BFC<br>    使用浮动元素 给盒子设置 float  left 或者 right 就可以打开BFC<br>    使用定位 position  设置 absolute绝对定位 或者 fixed 固定定位<br>    display 设置为 inline-block  table-cell flex inline-flex  table-caption<br>    overflow 不为visible</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;官方定义：BFC（Block Formatting Context）块格式化上下文， 是Web页面的可视CSS渲染的一部分，是块盒子的布局过程发生的区域，也是浮动元素与其他元素交互的区域。&lt;br&gt;简单来说 BFC就是页面上的一</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
     <title>typeof 与 instanceof 区别</title>
     <link href="https://anshaohan.github.io/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/"/>
     <id>https://anshaohan.github.io/2020/04/26/typeof-%E4%B8%8E-instanceof-%E5%8C%BA%E5%88%AB/</id>
     <published>2020-04-26T11:58:04.000Z</published>
-    <updated>2022-10-06T02:02:42.535Z</updated>
+    <updated>2022-10-06T03:47:23.395Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><p> typeof 只有6种返回值  number  string   Boolean  object  function undefined</p><p>​typeof 操作符返回一个字符串,表示未经计算的操作数的类型</p><p>虽然 typeof null 为 object  这是javaScript 一个悠久的Bug 不代表null 就是引用数据类型 并且null 本身也不是对象 所以 null在typeof之后返回的是有问题的结果</p><p>​instanceof  运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上</p><p>​实现原理 顺着原型链去找,直到找到相同的原型对象,返回true , 否则为 false</p><p>​  typeof 与 instanceof 都是判断数据类型的方法 区别如下</p><p>​typeof 会返回一个变量的基本类型,instanceof,返回的是一个布尔值</p><p>​instanceof 可以准确地判断复杂引用数据类型,但是不能正确判断基础数据类型</p><p>​typeof 也存在弊端 虽然可以判断基础数据类型 null除外</p><p>​但是引用数据类型中,除了function 类型以外,其他的也无法判断</p><p>​如果需要通用检测数据类型，可以采用<code>Object.prototype.toString</code>，调用该方法，统一返回格式<code>“[object Xxx]”</code>的字符串</p>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><p> typeof 只有6种返回值  number  string   Boolean  object  function undefined</p><p>​typeof 操作符返回一个字符串,表示未经计算的操作数的类型</p><p>虽然 typeof null 为 object  这是javaScript 一个悠久的Bug 不代表null 就是引用数据类型 并且null 本身也不是对象 所以 null在typeof之后返回的是有问题的结果</p><p>​instanceof  运算符用于检测构造函数的 prototype 属性是否出现在某个实例对象的原型链上</p><p>​实现原理 顺着原型链去找,直到找到相同的原型对象,返回true , 否则为 false</p><p>​  typeof 与 instanceof 都是判断数据类型的方法 区别如下</p><p>​typeof 会返回一个变量的基本类型,instanceof,返回的是一个布尔值</p><p>​instanceof 可以准确地判断复杂引用数据类型,但是不能正确判断基础数据类型</p><p>​typeof 也存在弊端 虽然可以判断基础数据类型 null除外</p><p>​但是引用数据类型中,除了function 类型以外,其他的也无法判断</p><p>​如果需要通用检测数据类型，可以采用<code>Object.prototype.toString</code>，调用该方法，统一返回格式<code>“[object Xxx]”</code>的字符串</p><p>typeof 的原理<br>    typeof 是根据二进制来判断的  所以之只能判断基本类型和object 但是并不能判断出是哪一种object<br>    000 对象  010 浮点数  1整数  110 布尔值 100字符串<br>    至于为什么判断null 为object  是因为null的机器码是000 所以会判断为object</p><p>instanceof 原理<br>    就是根据判断对象A是否在对象B的原型链上 如果在那么就会返回True 如果不在就返回False</p><pre><code>简单的实现一个instanceoffunction Myinstance(left,right)&#123; // 接收两个对象    let proto = Object.getPrototyepOf(left)   // 获取到对象的原型    let prototype = right.prototype  // 获取到构造函数的原型    whlie(true)&#123;        // 因为最后会获取到null null是原型的顶层 并且不是一个对象所以会报错 null转换布尔值会是false        // 而对象转换布尔值为 true          if(!proto) return false         if(proto==prototype) return true   // 判断原型和原型是否相同 是的话就返回true        // 如果当前没有找到 就重新赋值往原型链上寻找        proto = Object.getPrototyepOf(proto)    &#125;&#125;</code></pre>]]></content>
     
     
       
@@ -114,6 +165,32 @@
       
     <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
 &lt;p&gt;for in  和 for of 的区别&lt;br&gt;    for of 是es6 新增的 允许遍历一个 有interator接口的数据结构 与es3中的&lt;br&gt;    for in的区别&lt;br&gt;        for in  遍</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>js模块化开发是什么</title>
+    <link href="https://anshaohan.github.io/2020/01/22/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <id>https://anshaohan.github.io/2020/01/22/js%E6%A8%A1%E5%9D%97%E5%8C%96%E5%BC%80%E5%8F%91%E6%98%AF%E4%BB%80%E4%B9%88/</id>
+    <published>2020-01-22T03:05:51.000Z</published>
+    <updated>2022-10-06T05:35:11.961Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+</summary>
       
     
     
@@ -172,6 +249,32 @@
     
     
     <category term="Vue" scheme="https://anshaohan.github.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>null和undefined的区别</title>
+    <link href="https://anshaohan.github.io/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>https://anshaohan.github.io/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
+    <published>2019-06-05T03:05:08.000Z</published>
+    <updated>2022-10-06T03:49:16.431Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>Undefined类型只有一个值，即undefined。当声明的变量还未被初始化时，变量的默认值为undefined。用法</p><p>变量被声明了，但没有赋值时，就等于undefined。<br>调用函数时，应该提供的参数没有提供，该参数等于undefined。<br>对象没有赋值的属性，该属性的值为undefined。<br>函数没有返回值时，默认返回undefined<br>Null类型也只有一个值，即null。null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。用法</p><p>作为函数的参数，表示该函数的参数不是对象。<br>作为对象原型链的终点</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;Undefined类型只有一个值，即undefined。当声明的变量还未被初始化时，变量的默认值为undefined。用法&lt;/p&gt;
+&lt;p&gt;变量被声明了，但没有赋值时，就等于undefined。&lt;br&gt;调用函数时，应该提供的参数</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
     
   </entry>
   
@@ -448,34 +551,6 @@
     
     
     <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5新增的特性和标签</title>
-    <link href="https://anshaohan.github.io/2018/05/22/HTML5%E6%96%B0%E5%A2%9E%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E6%A0%87%E7%AD%BE/"/>
-    <id>https://anshaohan.github.io/2018/05/22/HTML5%E6%96%B0%E5%A2%9E%E7%9A%84%E7%89%B9%E6%80%A7%E5%92%8C%E6%A0%87%E7%AD%BE/</id>
-    <published>2018-05-22T04:08:13.000Z</published>
-    <updated>2022-10-05T14:13:26.017Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><pre><code>   HTML5新增        标签新增了一套页面布局的标签            &lt;header&gt;头部&lt;/header&gt;            &lt;nav&gt;导航&lt;/nav&gt;            &lt;main&gt;内容&lt;/main&gt;            &lt;asdie&gt;侧边栏&lt;/asdie&gt;            &lt;footer&gt;底部&lt;/footer&gt;            &lt;article&gt;博客 文章 帖子等&lt;/article&gt;            &lt;section&gt;章节 独立的一块 相当于无语义的div&lt;section&gt;            &lt;video&gt;视频&lt;/video&gt;            &lt;audio&gt;音频&lt;/audio&gt;            &lt;figure&gt;用于对元素组合 多用于图片和图片描述&lt;/figure&gt;            &lt;mark&gt;主要用来在视觉上向用户呈现那些需要突出的文字&lt;/mark&gt;            &lt;details&gt;描述&lt;summary&gt;描述的标题&lt;/summary&gt;&lt;/details&gt;            &lt;meter&gt;进度条&lt;/meter&gt;            &lt;progress&gt;也可以理解为 进度条&lt;/progress&gt;                &lt;datalist&gt;下拉框&lt;option&gt;item&lt;/option&gt;&lt;/datalist&gt;             &lt;canvas&gt;画布&lt;/canvas&gt;</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;pre&gt;&lt;code&gt;   HTML5新增
-        标签新增了一套页面布局的标签
-            &amp;lt;header&amp;gt;头部&amp;lt;/header&amp;gt;
-            &amp;lt;nav&amp;gt;导航&amp;l</summary>
-      
-    
-    
-    
-    <category term="HTML" scheme="https://anshaohan.github.io/categories/HTML/"/>
-    
-    
-    <category term="HTML" scheme="https://anshaohan.github.io/tags/HTML/"/>
     
   </entry>
   
