@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-06T02:28:33.156Z</updated>
+  <updated>2022-10-09T03:22:44.936Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>流式布局</title>
+    <link href="https://anshaohan.github.io/2022/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>https://anshaohan.github.io/2022/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/</id>
+    <published>2022-10-25T03:21:11.000Z</published>
+    <updated>2022-10-09T03:22:44.936Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
   
   <entry>
     <title>如何通过js判断一个数组</title>
@@ -177,6 +202,57 @@
     
     
     <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>双飞翼布局</title>
+    <link href="https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
+    <id>https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</id>
+    <published>2020-10-20T03:20:49.000Z</published>
+    <updated>2022-10-09T03:22:26.710Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>圣杯布局</title>
+    <link href="https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/"/>
+    <id>https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/</id>
+    <published>2020-10-09T03:20:59.000Z</published>
+    <updated>2022-10-09T03:22:12.692Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
     
   </entry>
   
@@ -414,6 +490,31 @@
   </entry>
   
   <entry>
+    <title>闭包</title>
+    <link href="https://anshaohan.github.io/2019/06/09/%E9%97%AD%E5%8C%85/"/>
+    <id>https://anshaohan.github.io/2019/06/09/%E9%97%AD%E5%8C%85/</id>
+    <published>2019-06-09T11:20:35.000Z</published>
+    <updated>2022-10-09T03:21:36.937Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>null和undefined的区别</title>
     <link href="https://anshaohan.github.io/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>https://anshaohan.github.io/2019/06/05/null%E5%92%8Cundefined%E7%9A%84%E5%8C%BA%E5%88%AB/</id>
@@ -463,113 +564,6 @@
     
     
     <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说Git常用的命令有哪些</title>
-    <link href="https://anshaohan.github.io/2019/05/09/%E8%AF%B4%E8%AF%B4Git%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
-    <id>https://anshaohan.github.io/2019/05/09/%E8%AF%B4%E8%AF%B4Git%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
-    <published>2019-05-09T08:56:46.000Z</published>
-    <updated>2022-10-09T02:58:43.230Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>​<strong>本地git基本命令</strong></p><p>　　　　<strong>1、将文件添加到仓库</strong><br>　　　　　　　　git add Readme            #指定将Readme文件添加到暂存区<br>　　　　　　　　git add .                  #将当前目录中的所有文件全部添加到暂存区<br>　　　　　　　　git status                 #查看更改了哪些，创建了哪些，哪些没有添加到仓库，哪些添加到了仓库<br>　　　　　　　　git status diff readme       #查看readme文件具体修改了哪些<br>　　　　　　　　git commit -m “commit tag”   # git commit告诉Git，把文件提交到仓库-m后面输入的是本次提交的说明(版本名字)</p><p>　　　　　　　　<strong>说明：</strong></p><p>​<strong>执行git commit 命令时必须配置用户信息</strong></p><p>　　　　　　　　　　git config –global user.name “Tom Git”<br>　　　　　　　　　　git config –global user.email <a href="mailto:&#x74;&#x6f;&#109;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">&#x74;&#x6f;&#109;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a></p><p>　　　　<strong>2、回滚</strong><br>　　　　　　　　git log                     #查看所有提交到仓库的版本记录:  git log -2<br>　　　　　　　　git reflog                   #查看所有操作记录（状态的md5值和改变的值）<br>　　　　　　　　git reset –hard d9e0ed0      #回到指定版本（d9e0ed0是创建版本的MD5值得前6位或者7位）<br>　　　　　　　　git reset –hard HEAD^        #回到上一个版本<br>　　　　　　　　注：这样可以回到第一次提交到仓库的状态，但再使用git log看不到其他几次的md5值了</p><p>　　　　<strong>3、撤销修改</strong></p><p>　　　　　　　　vim Readme                #我们在Readme文件中写了一些错误的代码<br>　　　　　　　　git add .                   #然后又一不小心将文件从工作区提交到了 stage区<br>　　　　　　　　git reset HEAD Readme      #将Readme中刚提交到 stage区 的代码撤回到工作区<br>　　　　　　　　git status                  #查看目前工作区状态<br>　　　　　　　　git checkout – Readme       #将Readme在工作区错误的代码丢弃</p><p>　　　　<strong>4、****删除操作（两种方法）</strong></p><p>　　　　　　　　<strong>方法1：</strong>这种方法需要执行git add . </p><p>　　　　　　　　　　rm Readme<br>　　　　　　　　　　git add .<br>　　　　　　　　　　git commit -m “delete file by git rm”<br>　　　　　　　　　　git reset –hard HEAD^</p><p>　　　　　　　　<strong>方法<strong><strong>2</strong></strong>：</strong>这种方法可以省去执行git add .</p><p>　　　　　　　　　　git rm Readme<br>　　　　　　　　　　git commit -m “delete file by git rm”<br>　　　　　　　　　　git reset –hard HEAD^</p><p>　　　　　　　　<strong>注：</strong> 在没有git commit前，使用 git checkout – Readme 可以恢复删除的文件（Readme）</p><p>　　　　<strong>5、强制使用master覆盖本地代码</strong></p><p>　　　　　　　　$ git fetch –all<br>　　　　　　　　$ git reset –hard origin&#x2F;master<br>　　　　　　　　$ git pull</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;​	&lt;strong&gt;本地git基本命令&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　　　　&lt;strong&gt;1、将文件添加到仓库&lt;/strong&gt;&lt;br&gt;　　　　　　　　git add Readme            #指定将Read</summary>
-      
-    
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>css选择器有哪些？优先级？哪些属性可以继承?</title>
-    <link href="https://anshaohan.github.io/2019/05/06/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF/"/>
-    <id>https://anshaohan.github.io/2019/05/06/css%E9%80%89%E6%8B%A9%E5%99%A8%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E4%BC%98%E5%85%88%E7%BA%A7%EF%BC%9F%E5%93%AA%E4%BA%9B%E5%B1%9E%E6%80%A7%E5%8F%AF%E4%BB%A5%E7%BB%A7%E6%89%BF/</id>
-    <published>2019-05-06T01:48:12.000Z</published>
-    <updated>2022-10-06T01:49:47.187Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>选择器：</p><p>​id选择器、类选择器、标签选择器、后代选择器、子选择器、相邻同胞选择器、群组选择器、</p><p>​还有一些不常用的选择器：</p><p>​伪类选择器、伪元素选择器，属性选择器</p><p>​css3 中新增的选择器：</p><p>​层次选择器，伪类选择器 （新增属性）、属性选择器（新增属性）</p><p>​优先级：</p><p>​！important  &gt; 内联&gt;类选择器&gt;标签选择器</p><p>​继承属性：</p><p>​字体系列属性：</p><p>​font  </p><p>​font-family  规定元素的字体系列</p><p>​font-weight 设置字体的粗细</p><p>​font-size 设置字体的尺寸</p><p>​font-style 定义字体的风格</p><p>​font-variant 偏大或偏小的字体</p><p>​文本系列属性</p><p>​text-indent 文本缩进</p><p>​text-align 文本水平对刘</p><p>​line-height 行高</p><p>​word-spacing 增加或减少单词见的空白</p><p>​letter-spacing 增加或减少字符间的空白</p><p>​text-transform 控制文本大小写</p><p>​direction 规定文本的书写方向</p><p>​color 文本颜色</p><p>​元素可见性  visibility </p><p>​表格布局属性</p><p>​caption-side 定位表格标题位置</p><p>​border-collapse 合并表格边框</p><p>​border-spacing 设置相邻单元格的边框间的距离</p><p>​empty-cells 单元格的边框的出现与消失</p><p>​table-layout 表格的宽度由什么决定</p><p>​列表属性</p><p>​list-style-type 文字前面的小点点样式</p><p>​list-style-position 小点点位置</p><p>​ list-style 以上的属性可以通过这个属性集合</p><p>​引用 qoutes 设置嵌套引用的引号类型</p><p>​光标属性 cursor 箭头可以变成需要的形状</p><p>​继承中比较特殊的几点</p><p>​a标签的字体颜色不能被继承</p><p>​h1-h6的字体大小也是不能被继承的</p><p>​无继承的属性</p><p>​dispaly</p><p>​文本属性 vertical-align、text-decoration</p><p>​盒子模型属性 宽度 高度 内外边距 边框</p><p>​背景属性 背景图片 颜色 位置</p><p>​定位属性  浮动 清楚浮动  定位position 等</p><p>​生成内容属性 content couter-reset  counter-increment</p><p>​轮廓样式属性 outline-style </p><p>​页面样式属性 size  page-break-before  page-break-after</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;选择器：&lt;/p&gt;
-&lt;p&gt;​							id选择器、类选择器、标签选择器、后代选择器、子选择器、相邻同胞选择器、群组选择器、&lt;/p&gt;
-&lt;p&gt;​				还有一些不常用的选择器：					&lt;/p&gt;
-&lt;p&gt;​						伪类选择器、</summary>
-      
-    
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说你对版本管理的理解？常用的版本管理工具有哪些？</title>
-    <link href="https://anshaohan.github.io/2019/04/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
-    <id>https://anshaohan.github.io/2019/04/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
-    <published>2019-04-09T11:56:26.000Z</published>
-    <updated>2022-10-09T02:59:00.243Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>​ 版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。简单来说就是用于管理多人协同开发项目的技术。</p><p>​<strong>版本控制分类</strong></p><p>​本地版本控制系统、</p><p>​优点：</p><p>​简单，很多系统中都有内置</p><p>​适合管理文本，如系统配置</p><p>​缺点：</p><p>​其不支持远程操作，因此并不适合多人版本开发</p><p>​集中式版本控制系统、</p><p>​优点：</p><p>​适合多人团队协作开发</p><p>​代码集中化管理</p><p>​缺点：</p><p>​单点故障</p><p>​必须联网，无法单机工作</p><p>​代表工具有<code>SVN</code>、<code>CVS</code></p><p>​分布式版本控制系统</p><p>​<strong>常见的版本控制工具</strong></p><p>​Git</p><p>​SVN（Subversion）<br>​CVS（Concurrent Versions System）<br>​VSS（Micorosoft Visual SourceSafe）<br>​TFS（Team Foundation Server）<br>​Visual Studio Online</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;​				 版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。简单来说就是用于管理多人协同开发项目的技术</summary>
-      
-    
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>回流和重绘</title>
-    <link href="https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/"/>
-    <id>https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/</id>
-    <published>2019-04-06T02:08:10.000Z</published>
-    <updated>2022-10-06T02:25:31.535Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：</p><p>​回流：</p><p>​布局引擎根据各种样式计算每个盒子再页面上大小与位置</p><p>​重绘：  </p><p>​当计算好盒子模型的位置、大小及其他属性后，浏览器根据每个盒子特性进行绘制</p><p>​回流触发机制：</p><p>​回流主要式计算节点的位置和几何信息，当页面布局和几何信息发生变化的时候就会触发回流</p><p>​删除或者添加可见的dom元素</p><p>​元素的位置发生变化、元素的尺寸发生变化</p><p>​内容发生变化，比如文本变化或图片被另一个不同尺寸的图片所替代</p><p>​页面一开始渲染的时候（这避免不了）</p><p>​浏览器的窗口尺寸变化（因为回流是根据视口的大小来计算元素的位置和大小的）</p><p>​重绘触发机制：</p><p>​触发回流一定会触发重绘</p><p>​颜色的修改</p><p>​文本方向的修改</p><p>​阴影的修改</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;html中每个元素都可以理解为一个盒子 在浏览器解析过程中会涉及到回流与重绘：&lt;/p&gt;
-&lt;p&gt;​								回流：&lt;/p&gt;
-&lt;p&gt;​									布局引擎根据各种样式计算每个盒子再页面上大小与位置&lt;/p&gt;
-&lt;p&gt;​		</summary>
-      
-    
-    
-    
-    <category term="HTML" scheme="https://anshaohan.github.io/categories/HTML/"/>
-    
-    
-    <category term="HTML" scheme="https://anshaohan.github.io/tags/HTML/"/>
     
   </entry>
   
