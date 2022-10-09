@@ -72,6 +72,89 @@
   </entry>
   
   <entry>
+    <title>说说React生命周期有哪些不同阶段？每个阶段对应的方法是？</title>
+    <link href="https://anshaohan.github.io/2021/05/09/%E8%AF%B4%E8%AF%B4React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F/"/>
+    <id>https://anshaohan.github.io/2021/05/09/%E8%AF%B4%E8%AF%B4React%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%9C%89%E5%93%AA%E4%BA%9B%E4%B8%8D%E5%90%8C%E9%98%B6%E6%AE%B5%EF%BC%9F%E6%AF%8F%E4%B8%AA%E9%98%B6%E6%AE%B5%E5%AF%B9%E5%BA%94%E7%9A%84%E6%96%B9%E6%B3%95%E6%98%AF%EF%BC%9F/</id>
+    <published>2021-05-09T02:51:12.000Z</published>
+    <updated>2022-10-09T02:53:11.737Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​react生命周期分为3个阶段</p><p>​创建阶段</p><p>​更新阶段</p><p>​卸载阶段</p><p>​创建阶段主要分成了以下几个生命周期方法：</p><p>​constructor  构造函数</p><p>实例过程中自动调用的方法，在方法内部通过super关键字获取来自父组件的props</p><p>在该方法中，通常的操作为初始化state状态或者在this上挂载方法</p><p>​getDerivedStateFromProps</p><p>​render</p><p>​类组件必须实现的方法，用于渲染DOM结构，可以访问组件state与prop属性</p><p>​componentDidMount</p><p>​组件挂载到真实DOM节点后执行，其在render方法之后执行</p><p>此方法多用于执行一些数据获取，事件监听等操作</p><p>​更新阶段的函数主要为如下方法：</p><p>​getDerivedStateFromProps</p><p>​shouldComponentUpdate</p><p>​render</p><p>​getSnapshotBeforeUpdate</p><p>​componentDidUpdate</p><p>​卸载阶段</p><p>​<strong>componentWillUnmount</strong></p><p>此方法用于组件卸载前，清理一些注册监听事件，或者取消订阅的网络请求等</p><p>一旦一个组件实例被卸载，其不会被再次挂载，而只可能是被重新创建</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;p&gt;​	react生命周期分为3个阶段&lt;/p&gt;
+&lt;p&gt;​													创建阶段&lt;/p&gt;
+&lt;p&gt;​													更新阶段&lt;/p&gt;
+&lt;p&gt;​													卸载阶段&lt;/p&gt;
+&lt;p&gt;​								</summary>
+      
+    
+    
+    
+    <category term="React" scheme="https://anshaohan.github.io/categories/React/"/>
+    
+    
+    <category term="React" scheme="https://anshaohan.github.io/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说你对发布订阅、观察者模式的理解？区别？</title>
+    <link href="https://anshaohan.github.io/2020/12/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E3%80%81%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/"/>
+    <id>https://anshaohan.github.io/2020/12/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E5%8F%91%E5%B8%83%E8%AE%A2%E9%98%85%E3%80%81%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%8C%BA%E5%88%AB%EF%BC%9F/</id>
+    <published>2020-12-09T02:53:19.000Z</published>
+    <updated>2022-10-09T02:55:35.642Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​<strong>观察者模式</strong></p><p>​观察者模式定义了对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知，并自动更新</p><p>​观察者模式一般至少有一个可被观察的对象 Subject ，可以有多个<code>观察者</code>去观察这个对象。二者的关系是通过<code>被观察者主动</code>建立的，<code>被观察者</code>至少要有三个方法——添加观察者、移除观察者、通知观察者。</p><p>​当被观察者将某个观察者添加到自己的<code>观察者列表</code>后，观察者与被观察者的关联就建立起来了。此后只要被观察者在某种时机触发<code>通知观察者</code>方法时，观察者即可接收到来自被观察者的消息</p><p>观察者模式属于行为型模式，行为型模式关注的是对象之间的通讯，观察者模式就是观察者和被观察者之间的通讯</p><p>​<strong>发布订阅模式</strong></p><p>​发布-订阅是一种消息范式，消息的发送者（称为发布者）不会将消息直接发送给特定的接收者（称为订阅者）。而是将发布的消息分为不同的类别，无需了解哪些订阅者（如果有的话）可能存在</p><p>​与<code>观察者模式</code>相比，发布订阅核心基于一个中心来建立整个体系。其中<code>发布者</code>和<code>订阅者</code>不直接进行通信，而是发布者将要发布的消息交由中心管理，订阅者也是根据自己的情况，按需订阅中心中的消息。</p><p>​<strong>区别</strong></p><p>​观察者是经典软件<code>设计模式</code>中的一种，但发布订阅只是软件架构中的一种<code>消息范式</code>。</p><p>​实现二者所需的角色数量有着明显的区别。观察者模式本身只需要<code>2个</code>角色便可成型，即<code>观察者</code>和<code>被观察者</code>，其中<code>被观察者</code>是重点。而发布订阅需要至少<code>3个</code>角色来组成，包括<code>发布者</code>、<code>订阅者</code>和<code>发布订阅中心</code>，其中<code>发布订阅中心</code>是重点。</p><p>​观察者是知道Subject的，Subject一直保持对观察者进行记录。然而，在发布订阅模式中，发布者和订阅者不知道对方的存在。它们只有通过消息代理进行通信。</p><p>​在发布订阅模式中，组件是松散耦合的，正好和观察者模式相反。</p><p>​观察者模式大多数时候是同步的，比如当事件触发，Subject就会去调用观察者的方法。而发布-订阅模式大多数时候是异步的（使用消息队列）</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​	&lt;strong&gt;观察者模式&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​							观察者模式定义了对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知，并自动更新&lt;/p&gt;
+&lt;p&gt;​						</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Token cookie session 区别</title>
+    <link href="https://anshaohan.github.io/2020/11/09/Token-cookie-session-%E5%8C%BA%E5%88%AB/"/>
+    <id>https://anshaohan.github.io/2020/11/09/Token-cookie-session-%E5%8C%BA%E5%88%AB/</id>
+    <published>2020-11-09T02:53:40.000Z</published>
+    <updated>2022-10-09T02:54:26.062Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p><strong>Cookie</strong>：</p><p>​cookie网站为了辨别用户身份、进行 session 跟踪而储存在用户本地终端上的数据(通常经过加密)，发送请求时，cookie会随着请求头一起发给服务器， cookie储存于浏览器</p><p>​作用：识别用户信息，储存用户数据</p><p>​cookie具有时效性，存活时间取决于不同的网站，在cookie未失效时，若再次登录该网站，则会自动登录，不需要重新输入账号与密码</p><p><strong>Session</strong>:<br>            session是服务器为了保存用户状态而创建的一个特殊的对象。session储存在服务器</p><p>​当用户第一次登陆网站时，服务器会生成一个session，并将该sessionID发送给用户储存在cookie中，当第二次发送请求时，sessionID就随着cookie一起发送，浏览器就可以识别出是谁发送的请求</p><p>当用户离开网站时，储存的session会被销毁</p><p><strong>Token</strong>：<br>            Token是服务端生成的一串字符串，以作客户端进行请求的一个令牌，当第一次登录后，服务器生成一个Token便将此Token返回给客户端，以后客户端只需带上这个Token前来请求数据即可，无需再次带上用户名和密码。</p><p>​作用机制：服务器并不保存token，而是通过数据签名的方法，对数据用算法（如SHA-256）与私钥进行签名后作为Token，当Token发送给服务器时，服务会通过相同的算法与密钥进行签名，如果和Token中的签名相同，服务器就知道用户已经登录过了，并且可以直接得到用户的userID</p><p><strong>1.session和cookie区别：</strong></p><pre><code>                             数据存放位置不同：Session数据是存在服务器中的，cookie数据存放在浏览器当中。                              安全程度不同：cookie放在服务器中不是很安全，session放在服务器中，相对安全。</code></pre><p>​性能使用程度不同：session放在服务器上，访问增多会占用服务器的性能；考虑到减轻服务器性能方面，应使用cookie。</p><p>​数据存储大小不同：单个cookie保存的数据不能超过4K，session存储在服务端，根据服务器大小来定。</p><p>​</p><p><strong>2.token和session区别：</strong></p><p>​token是开发定义的，session是http协议规定的；</p><p>​ token不一定存储，session存在服务器中；</p><p>​ token可以跨域，session不可以跨域，它是与域名绑定的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;&lt;strong&gt;Cookie&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;​			cookie网站为了辨别用户身份、进行 session 跟踪而储存在用户本地终端上的数据(通常经过加密)，发送请求时，cookie会随着请求头一起发给服务</summary>
+      
+    
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
+    
+    
+    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>js中变量提升</title>
     <link href="https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/"/>
     <id>https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</id>
@@ -119,6 +202,34 @@
     
     
     <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Vue组件之间的通信方式都有哪些</title>
+    <link href="https://anshaohan.github.io/2020/08/09/Vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>https://anshaohan.github.io/2020/08/09/Vue%E7%BB%84%E4%BB%B6%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F%E9%83%BD%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
+    <published>2020-08-09T02:47:14.000Z</published>
+    <updated>2022-10-09T02:50:12.431Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>vuex</p><p>​State：放状态的地方</p><p>​Mutation：唯一修改状态的地方，不支持异步</p><p>·Action：通过调用Mutation中的方法来达到修改状态的目的，支持异步</p><p>​Getter：可以理解为计算属性</p><p>​Module：模块每个模块拥有自己的 state、mutation、action、getter</p><p>​父子组件间通信</p><p>​子组件通过 props 属性来接受父组件的数据，然后父组件在子组件上注册监听事件，子组件通过 emit 触发事件来向父组件发送数据</p><p>​通过 ref 属性给子组件设置一个名字。父组件通过 $refs 组件名来获得子组件，子组件通过 $parent 获得父组件，这样也可以实现通信</p><p>​vue3新增加的  使用 provide&#x2F;inject，在父组件中通过 provide提供变量，在子组件中通过 inject 来将变量注入到组件中。不论子组件有多深，只要调用了 inject 那么就可以注入 provide中的数据</p><p>​</p><p>​兄弟组件间通信</p><p>​使用 eventBus 的方法，它的本质是通过创建一个空的 Vue 实例来作为消息传递的对象，通信的组件引入这个实例，通信的组件通过在这个实例上监听和触发事件，来实现消息的传递</p><p>​通过 $parent &#x2F; $refs 来获取到兄弟组件，也可以进行通信。</p><p>​任意组件间通信</p><p>​使用 eventBus ，其实就是创建一个事件中心，相当于中转站，可以用它来传递事件和接收事件</p><p>第三方库 pubsub.Js 可以实现<br>        <a href="https://github.com/mroderick/PubSubJS#readme">https://github.com/mroderick/PubSubJS#readme</a></p><pre><code>    介绍</code></pre><p>PubSubJS是一个用JavaScript编写的基于主题的 发布&#x2F;订阅库<br>PubSubJS具有同步解耦，因此主题是异步发布的。这有助于保持程序的可预测性，因为在消费者处理主题时，不会阻止主题的创建者。</p><p>安装<br>vue 使用 PubSubJS 用法:<br>npm install pubsub-js</p><p>全局引用<br>只需要在main.js 引入 import PubSub from ‘pubsub-js’</p><p>使用<br>发布:<br>PubSub.publish( id, params)</p><p>订阅:<br>PubSub.subscribe( id, function(msg, params) )<br>对指定的id进行订阅, 需要与发布方的id名保持一致, 当生产者发布一条消息, 订阅者会对此消息进行消费处理</p><p>取消订阅:<br>PubSub.unsubscribe( …id )<br>可取消多个订阅, id 用逗号隔开即可<br>可防止造成多次发布订阅</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;vuex&lt;/p&gt;
+&lt;p&gt;​							State：放状态的地方&lt;/p&gt;
+&lt;p&gt;​							Mutation：唯一修改状态的地方，不支持异步&lt;/p&gt;
+&lt;p&gt;·							Action：通过调用Mutation中的方法来达</summary>
+      
+    
+    
+    
+    <category term="Vue" scheme="https://anshaohan.github.io/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://anshaohan.github.io/tags/Vue/"/>
     
   </entry>
   
@@ -232,16 +343,38 @@
     <link href="https://anshaohan.github.io/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/"/>
     <id>https://anshaohan.github.io/2019/08/16/Vue-%E5%8F%8C%E5%90%91%E6%95%B0%E6%8D%AE%E7%BB%91%E5%AE%9A%E5%8E%9F%E7%90%86/</id>
     <published>2019-08-16T11:09:31.000Z</published>
-    <updated>2022-10-05T08:15:01.899Z</updated>
+    <updated>2022-10-09T03:00:45.692Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><p>双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。<br>其中 数据劫持就是使用 object.defineProperty 来实现 对data中的数据进行循环绑定 每个属性身上都会有一个 getter 和 setter方法</p><p>实现一个简单的数据响应</p><pre><code>Object.defineProperty(obj,&#39;name&#39;,&#123;    get:function()&#123;        // 获取数据        return obj.name    &#125;,    set:function(val)&#123;        // 获取到新的值并且赋值给对象属性        obj.name = val    &#125;&#125;)</code></pre><p>这样就可以实现一个简单的数据响应式<br>当然这是vue2中的数据响应式<br>更新过程<br>    1. new Mvvm()   &#x2F;&#x2F; 创建一个vue实例<br>    2. 同时两个对象进行编译  observer对象 来遍历data中的数据给data中的每一项数据都绑定一个getter 和setter方法<br>       compile 对象进行编译模板 然后进行初始化视图 和 绑定订阅者然后订阅数据变化 并且绑定更新函数<br>    3. wacther对象 是一个依赖收集的作用 每个属性身上都会有一个dep对象 当数据发生变化之后 dep会通知wecther去派发更新调用update方法 来实现数据的响应式</p><p>vue2 中的数据响应式的话是有缺点的<br>    首先 vue2中的数据响应式监听不到对 对象的操作  删除 添加 因为监听的是对象的属性而不是对象 然后就会有一些问题<br>    比如 对象添加一个属性 为什么这个属性不是响应式的<br>        那是因为vue的数据劫持是在初始化时 绑定到我们的属性 你去新增一个对象属性 1是监听不到对象的变化 2是 属性身上并没有getter 和 setter属性<br>    第二点就是  对于数组的一个监听  同理 监听的是对象的属性  数组的话也是引用数据类型 并且如果使用数组下标去操作数组 也是监听不到的 但是使用数组身上的方法就可以被监听到<br>    相对于对象来说 怎么去解决   vue2中也是有相应的一个api  $set $delete 等等一些方法去操作对象 就可以实现对象的响应式<br>vue3 中的响应式是根据 es6新增的Proxy 构造函数 有代理的意思结合新增的 Reflect  数据反射来实现的数据响应式<br>    概念就是 在目标对象前增加一层拦截  访问对象都会经过这层拦截 可以对外部访问进行过滤和改写  并且返回一个新的对象<br>    vue3中的响应式监听的是对象本身 而不是一个属性  所以当我们对 对象进行操作时都可以被监听到并且实现数据响应</p><pre><code>new Proxy(obj,&#123;    get:function(target,key,proxy)&#123;  // 三个参数  目标  属性名称  proxy实例本身        const res = Reflect.get(target,key,proxy) // 通过Reflect 反射出去        return res    &#125;,    set:function(target,key,value,proxy)&#123;  // 四个参数 目标  属性名称 proxy实例本身        const res = Reflect.get(target,key，value,proxy) // 通过Reflect 更新新的值 反射出去         return res    &#125;&#125;)</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>4<br>双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。<br>其中 数据劫持就是使用 object.defineProperty 来实现 对data中的数据进行循环绑定 每个属性身上都会有一个 getter 和 setter方法</p><p>实现一个简单的数据响应</p><pre><code>Object.defineProperty(obj,&#39;name&#39;,&#123;    get:function()&#123;        // 获取数据        return obj.name    &#125;,    set:function(val)&#123;        // 获取到新的值并且赋值给对象属性        obj.name = val    &#125;&#125;)</code></pre><p>这样就可以实现一个简单的数据响应式<br>当然这是vue2中的数据响应式<br>更新过程<br>    1. new Mvvm()   &#x2F;&#x2F; 创建一个vue实例<br>    2. 同时两个对象进行编译  observer对象 来遍历data中的数据给data中的每一项数据都绑定一个getter 和setter方法<br>       compile 对象进行编译模板 然后进行初始化视图 和 绑定订阅者然后订阅数据变化 并且绑定更新函数<br>    3. wacther对象 是一个依赖收集的作用 每个属性身上都会有一个dep对象 当数据发生变化之后 dep会通知wecther去派发更新调用update方法 来实现数据的响应式</p><p>vue2 中的数据响应式的话是有缺点的<br>    首先 vue2中的数据响应式监听不到对 对象的操作  删除 添加 因为监听的是对象的属性而不是对象 然后就会有一些问题<br>    比如 对象添加一个属性 为什么这个属性不是响应式的<br>        那是因为vue的数据劫持是在初始化时 绑定到我们的属性 你去新增一个对象属性 1是监听不到对象的变化 2是 属性身上并没有getter 和 setter属性<br>    第二点就是  对于数组的一个监听  同理 监听的是对象的属性  数组的话也是引用数据类型 并且如果使用数组下标去操作数组 也是监听不到的 但是使用数组身上的方法就可以被监听到<br>    相对于对象来说 怎么去解决   vue2中也是有相应的一个api  $set $delete 等等一些方法去操作对象 就可以实现对象的响应式<br>vue3 中的响应式是根据 es6新增的Proxy 构造函数 有代理的意思结合新增的 Reflect  数据反射来实现的数据响应式<br>    概念就是 在目标对象前增加一层拦截  访问对象都会经过这层拦截 可以对外部访问进行过滤和改写  并且返回一个新的对象<br>    vue3中的响应式监听的是对象本身 而不是一个属性  所以当我们对 对象进行操作时都可以被监听到并且实现数据响应</p><pre><code>new Proxy(obj,&#123;    get:function(target,key,proxy)&#123;  // 三个参数  目标  属性名称  proxy实例本身        const res = Reflect.get(target,key,proxy) // 通过Reflect 反射出去        return res    &#125;,    set:function(target,key,value,proxy)&#123;  // 四个参数 目标  属性名称 proxy实例本身        const res = Reflect.get(target,key，value,proxy) // 通过Reflect 更新新的值 反射出去         return res    &#125;&#125;)</code></pre>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。&lt;b</summary>
-      
+    <summary type="html">&lt;p&gt;4&lt;br&gt;双向数据绑定的原理：采用“数据劫持”结合“发布者-订阅者”模式的方式，通过“Object.defineProperty()”方法来劫持各个属性的setter，getter，在数据变动时发布消息给订阅者，触发相应的监听回调。&lt;br&gt;其中 数据劫持就是使用 object.defineProperty 来实现 对data中的数据进行循环绑定 每个属性身上都会有一个 getter 和 setter方法&lt;/p&gt;
+&lt;p&gt;实现一个简单的数据响应&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Object.defineProperty(obj,&amp;#39;name&amp;#39;,&amp;#123;
+    get:function()&amp;#123;
+        // 获取数据
+        return obj.name
+    &amp;#125;,
+    set:function(val)&amp;#123;
+        // 获取到新的值并且赋值给对象属性
+        obj.name = val
+    &amp;#125;
+&amp;#125;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这样就可以实现一个简单的数据响应式&lt;br&gt;当然这是vue2中的数据响应式&lt;br&gt;更新过程&lt;br&gt;    1. new Mvvm()   &amp;#x2F;&amp;#x2F; 创建一个vue实例&lt;br&gt;    2. 同时两个对象进行编译  observer对象 来遍历data中的数据给data中的每一项数据都绑定一个getter 和setter方法&lt;br&gt;       compile 对象进行编译模板 然后进行初始化视图 和 绑定订阅者然后订阅数据变化 并且绑定更新函数&lt;br&gt;    3. wacther对象 是一个依赖收集的作用 每个属性身上都会有一个dep对象 当数据发生变化之后 dep会通知wecther去派发更新调用update方法 来实现数据的响应式&lt;/p&gt;
+&lt;p&gt;vue2 中的数据响应式的话是有缺点的&lt;br&gt;    首先 vue2中的数据响应式监听不到对 对象的操作  删除 添加 因为监听的是对象的属性而不是对象 然后就会有一些问题&lt;br&gt;    比如 对象添加一个属性 为什么这个属性不是响应式的&lt;br&gt;        那是因为vue的数据劫持是在初始化时 绑定到我们的属性 你去新增一个对象属性 1是监听不到对象的变化 2是 属性身上并没有getter 和 setter属性&lt;br&gt;    第二点就是  对于数组的一个监听  同理 监听的是对象的属性  数组的话也是引用数据类型 并且如果使用数组下标去操作数组 也是监听不到的 但是使用数组身上的方法就可以被监听到&lt;br&gt;    相对于对象来说 怎么去解决   vue2中也是有相应的一个api  $set $delete 等等一些方法去操作对象 就可以实现对象的响应式&lt;br&gt;vue3 中的响应式是根据 es6新增的Proxy 构造函数 有代理的意思结合新增的 Reflect  数据反射来实现的数据响应式&lt;br&gt;    概念就是 在目标对象前增加一层拦截  访问对象都会经过这层拦截 可以对外部访问进行过滤和改写  并且返回一个新的对象&lt;br&gt;    vue3中的响应式监听的是对象本身 而不是一个属性  所以当我们对 对象进行操作时都可以被监听到并且实现数据响应&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;new Proxy(obj,&amp;#123;
+    get:function(target,key,proxy)&amp;#123;  // 三个参数  目标  属性名称  proxy实例本身
+        const res = Reflect.get(target,key,proxy) // 通过Reflect 反射出去
+        return res
+    &amp;#125;,
+    set:function(target,key,value,proxy)&amp;#123;  // 四个参数 目标  属性名称 proxy实例本身
+        const res = Reflect.get(target,key，value,proxy) // 通过Reflect 更新新的值 反射出去 
+        return res
+    &amp;#125;
+&amp;#125;)
+&lt;/code&gt;&lt;/pre&gt;
+</summary>
     
     
     
@@ -249,6 +382,34 @@
     
     
     <category term="Vue" scheme="https://anshaohan.github.io/tags/Vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说 git 发生冲突的场景？如何解决</title>
+    <link href="https://anshaohan.github.io/2019/07/09/%E8%AF%B4%E8%AF%B4-git-%E5%8F%91%E7%94%9F%E5%86%B2%E7%AA%81%E7%9A%84%E5%9C%BA%E6%99%AF%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/"/>
+    <id>https://anshaohan.github.io/2019/07/09/%E8%AF%B4%E8%AF%B4-git-%E5%8F%91%E7%94%9F%E5%86%B2%E7%AA%81%E7%9A%84%E5%9C%BA%E6%99%AF%EF%BC%9F%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3/</id>
+    <published>2019-07-09T10:00:53.000Z</published>
+    <updated>2022-10-09T03:01:25.106Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​一般情况下，出现冲突的场景有如下：</p><p>​多个分支代码合并到一个分支时</p><p>​多个分支向同一个远端分支推送</p><p>​具体情况就是，多个分支修改了同一个文件（任何地方）或者多个分支修改了同一个文件的名称</p><p>​冲突解决方法</p><p>​情景一：在当前分支上，直接修改冲突代码—&gt;add—&gt;commit。</p><p>​情景二：在本地当前分支上，修改冲突代码—&gt;add—&gt;commit—&gt;push</p><p>​现在要做的事情就是将冲突的内容进行更改，对每个文件使用 <code>git add</code> 命令来将其标记为冲突已解决。一旦暂存这些原本有冲突的文件，<code>Git</code>就会将它们标记为冲突已解决</p><p>​当<code>Git</code>无法自动合并分支时，就必须首先解决冲突，解决冲突后，再提交，合并完成</p><p>解决冲突就是把<code>Git</code>合并失败的文件手动编辑为我们期望的内容，再提交    </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​	一般情况下，出现冲突的场景有如下：&lt;/p&gt;
+&lt;p&gt;​										多个分支代码合并到一个分支时&lt;/p&gt;
+&lt;p&gt;​										多个分支向同一个远端分支推送&lt;/p&gt;
+&lt;p&gt;​							具体情况就是，多个分支修</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
     
   </entry>
   
@@ -275,6 +436,59 @@
     
     
     <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说对git的理解</title>
+    <link href="https://anshaohan.github.io/2019/05/16/%E8%AF%B4%E8%AF%B4%E5%AF%B9git%E7%9A%84%E7%90%86%E8%A7%A3/"/>
+    <id>https://anshaohan.github.io/2019/05/16/%E8%AF%B4%E8%AF%B4%E5%AF%B9git%E7%9A%84%E7%90%86%E8%A7%A3/</id>
+    <published>2019-05-16T02:59:54.000Z</published>
+    <updated>2022-10-09T03:00:24.984Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​git 是一个分布式管理版本的控制软件，其作用就是可以让你更好的管理你的程序，</p><p>​<strong>工作原理</strong></p><p>​当我们通过<code>git init</code>创建或者<code>git clone</code>一个项目的时候，项目目录会隐藏一个<code>.git</code>子目录，其作用是用来跟踪管理版本库的</p><p>​<code>Git</code> 中所有数据在存储前都计算校验和，然后以校验和来引用，所以在我们修改或者删除文件的时候，<code>git</code>能够知道</p><p>​<code>Git</code>用以计算校验和的机制叫做 SHA-1 散列（hash，哈希）， 这是一个由 40 个十六进制字符（0-9 和 a-f）组成字符串，基于 Git 中文件的内容或目录结构计算出来</p><p><strong>当我们修改文件的时候，git就会修改文件的状态，可以通过git status进行查询，状态情况如下：</strong></p><p>​已修改（modified）：表示修改了文件，但还没保存到数据库中。</p><p>​已暂存（staged）：表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。</p><p>​已提交（committed）：表示数据已经安全的保存在本地数据库中。</p><p><strong>文件状态对应的，不同状态的文件在Git中处于不同的工作区域，主要分成了四部分：</strong></p><p>​工作区：相当于本地写代码的区域，如 git clone 一个项目到本地，相当于本地克隆了远程仓库项目的一个副本</p><p>​暂存区：暂存区是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中</p><p>​本地仓库：提交更新，找到暂存区域的文件，将快照永久性存储到 Git 本地仓库</p><p>​远程仓库：远程的仓库，如 github</p><p><strong><code>git</code>日常简单的使用的6个命令：</strong></p><p>​add    commit   push   pull  clone  checkout</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​	git 是一个分布式管理版本的控制软件，其作用就是可以让你更好的管理你的程序，&lt;/p&gt;
+&lt;p&gt;​				&lt;strong&gt;工作原理&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;​						当我们通过&lt;code&gt;git init&lt;/co</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>说说Git常用的命令有哪些</title>
+    <link href="https://anshaohan.github.io/2019/05/09/%E8%AF%B4%E8%AF%B4Git%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9C%89%E5%93%AA%E4%BA%9B/"/>
+    <id>https://anshaohan.github.io/2019/05/09/%E8%AF%B4%E8%AF%B4Git%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4%E6%9C%89%E5%93%AA%E4%BA%9B/</id>
+    <published>2019-05-09T08:56:46.000Z</published>
+    <updated>2022-10-09T02:58:43.230Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​<strong>本地git基本命令</strong></p><p>　　　　<strong>1、将文件添加到仓库</strong><br>　　　　　　　　git add Readme            #指定将Readme文件添加到暂存区<br>　　　　　　　　git add .                  #将当前目录中的所有文件全部添加到暂存区<br>　　　　　　　　git status                 #查看更改了哪些，创建了哪些，哪些没有添加到仓库，哪些添加到了仓库<br>　　　　　　　　git status diff readme       #查看readme文件具体修改了哪些<br>　　　　　　　　git commit -m “commit tag”   # git commit告诉Git，把文件提交到仓库-m后面输入的是本次提交的说明(版本名字)</p><p>　　　　　　　　<strong>说明：</strong></p><p>​<strong>执行git commit 命令时必须配置用户信息</strong></p><p>　　　　　　　　　　git config –global user.name “Tom Git”<br>　　　　　　　　　　git config –global user.email <a href="mailto:&#x74;&#x6f;&#109;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;">&#x74;&#x6f;&#109;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#108;&#x65;&#46;&#x63;&#111;&#x6d;</a></p><p>　　　　<strong>2、回滚</strong><br>　　　　　　　　git log                     #查看所有提交到仓库的版本记录:  git log -2<br>　　　　　　　　git reflog                   #查看所有操作记录（状态的md5值和改变的值）<br>　　　　　　　　git reset –hard d9e0ed0      #回到指定版本（d9e0ed0是创建版本的MD5值得前6位或者7位）<br>　　　　　　　　git reset –hard HEAD^        #回到上一个版本<br>　　　　　　　　注：这样可以回到第一次提交到仓库的状态，但再使用git log看不到其他几次的md5值了</p><p>　　　　<strong>3、撤销修改</strong></p><p>　　　　　　　　vim Readme                #我们在Readme文件中写了一些错误的代码<br>　　　　　　　　git add .                   #然后又一不小心将文件从工作区提交到了 stage区<br>　　　　　　　　git reset HEAD Readme      #将Readme中刚提交到 stage区 的代码撤回到工作区<br>　　　　　　　　git status                  #查看目前工作区状态<br>　　　　　　　　git checkout – Readme       #将Readme在工作区错误的代码丢弃</p><p>　　　　<strong>4、****删除操作（两种方法）</strong></p><p>　　　　　　　　<strong>方法1：</strong>这种方法需要执行git add . </p><p>　　　　　　　　　　rm Readme<br>　　　　　　　　　　git add .<br>　　　　　　　　　　git commit -m “delete file by git rm”<br>　　　　　　　　　　git reset –hard HEAD^</p><p>　　　　　　　　<strong>方法<strong><strong>2</strong></strong>：</strong>这种方法可以省去执行git add .</p><p>　　　　　　　　　　git rm Readme<br>　　　　　　　　　　git commit -m “delete file by git rm”<br>　　　　　　　　　　git reset –hard HEAD^</p><p>　　　　　　　　<strong>注：</strong> 在没有git commit前，使用 git checkout – Readme 可以恢复删除的文件（Readme）</p><p>　　　　<strong>5、强制使用master覆盖本地代码</strong></p><p>　　　　　　　　$ git fetch –all<br>　　　　　　　　$ git reset –hard origin&#x2F;master<br>　　　　　　　　$ git pull</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​	&lt;strong&gt;本地git基本命令&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　　　&lt;strong&gt;1、将文件添加到仓库&lt;/strong&gt;&lt;br&gt;　　　　　　　　git add Readme            #指定将Read</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
     
   </entry>
   
@@ -307,6 +521,31 @@
   </entry>
   
   <entry>
+    <title>说说你对版本管理的理解？常用的版本管理工具有哪些？</title>
+    <link href="https://anshaohan.github.io/2019/04/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
+    <id>https://anshaohan.github.io/2019/04/09/%E8%AF%B4%E8%AF%B4%E4%BD%A0%E5%AF%B9%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F%E5%B8%B8%E7%94%A8%E7%9A%84%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
+    <published>2019-04-09T11:56:26.000Z</published>
+    <updated>2022-10-09T02:59:00.243Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>​ 版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。简单来说就是用于管理多人协同开发项目的技术。</p><p>​<strong>版本控制分类</strong></p><p>​本地版本控制系统、</p><p>​优点：</p><p>​简单，很多系统中都有内置</p><p>​适合管理文本，如系统配置</p><p>​缺点：</p><p>​其不支持远程操作，因此并不适合多人版本开发</p><p>​集中式版本控制系统、</p><p>​优点：</p><p>​适合多人团队协作开发</p><p>​代码集中化管理</p><p>​缺点：</p><p>​单点故障</p><p>​必须联网，无法单机工作</p><p>​代表工具有<code>SVN</code>、<code>CVS</code></p><p>​分布式版本控制系统</p><p>​<strong>常见的版本控制工具</strong></p><p>​Git</p><p>​SVN（Subversion）<br>​CVS（Concurrent Versions System）<br>​VSS（Micorosoft Visual SourceSafe）<br>​TFS（Team Foundation Server）<br>​Visual Studio Online</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;​				 版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。简单来说就是用于管理多人协同开发项目的技术</summary>
+      
+    
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
+    
+    
+    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>回流和重绘</title>
     <link href="https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/"/>
     <id>https://anshaohan.github.io/2019/04/06/%E5%9B%9E%E6%B5%81%E5%92%8C%E9%87%8D%E7%BB%98/</id>
@@ -331,226 +570,6 @@
     
     
     <category term="HTML" scheme="https://anshaohan.github.io/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端工程化</title>
-    <link href="https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/"/>
-    <id>https://anshaohan.github.io/2019/02/20/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</id>
-    <published>2019-02-20T02:08:13.000Z</published>
-    <updated>2022-10-05T14:15:44.013Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>前端工程化可以分成四个方面来说，分别为模块化、组件化、规范化和自动化。</p><h5 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h5><p>模块化是指将一个文件拆分成多个相互依赖的文件，最后进行统一的打包和加载，这样能够很好的保证高效的多人协作。其中包含</p><p>JS 模块化：CommonJS、AMD、CMD 以及 ES6 Module。<br>CSS 模块化：Sass、Less、Stylus、BEM、CSS Modules 等。其中预处理器和 BEM 都会有的一个问题就是样式覆盖。而 CSS Modules 则是通过 JS 来管理依赖，最大化的结合了 JS 模块化和 CSS 生态，比如 Vue 中的 style scoped。<br>资源模块化：任何资源都能以模块的形式进行加载，目前大部分项目中的文件、CSS、图片等都能直接通过 JS 做统一的依赖关系处理。</p><h5 id="组件化"><a href="#组件化" class="headerlink" title="组件化"></a>组件化</h5><p>不同于模块化，模块化是对文件、对代码和资源拆分，而组件化则是对 UI 层面的拆分。</p><p>通常，我们会需要对页面进行拆分，将其拆分成一个一个的零件，然后分别去实现这一个个零件，最后再进行组装。 在我们的实际业务开发中，对于组件的拆分我们需要做不同程度的考量，其中主要包括细粒度和通用性这两块的考虑。 对于业务组件，你更多需要考量的是针对你负责业务线的一个适用度，即你设计的业务组件是否成为你当前业务的 “通用” 组件。</p><h5 id="规范化"><a href="#规范化" class="headerlink" title="规范化"></a>规范化</h5><p>正所谓无规矩不成方圆，一些好的规范则能很好的帮助我们对项目进行良好的开发管理。规范化指的是我们在工程开发初期以及开发期间制定的系列规范，其中又包含了</p><p>项目目录结构<br>编码规范：对于编码这块的约束，一般我们都会采用一些强制措施，比如 ESLint、StyleLint 等。<br>联调规范<br>文件命名规范<br>样式管理规范：目前流行的样式管理有 BEM、Sass、Less、Stylus、CSS Modules 等方式。<br>git flow 工作流：其中包含分支命名规范、代码合并规范等。<br>定期 code review … 等等</p><h5 id="自动化"><a href="#自动化" class="headerlink" title="自动化"></a>自动化</h5><p>从最早先的 grunt、gulp 等，再到目前的 webpack、parcel。这些自动化工具在自动化合并、构建、打包都能为我们节省很多工作。而这些只是前端自动化其中的一部分，前端自动化还包含了持续集成、自动化测试等方方面面。</p><p>以上就是我所了解的前端工程化，以工程的角度去理解我们的web前端。工程是工程，而不是某项技术。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;前端工程化可以分成四个方面来说，分别为模块化、组件化、规范化和自动化。&lt;/p&gt;
-&lt;h5 id=&quot;模块化&quot;&gt;&lt;a href=&quot;#模块化&quot; class=&quot;headerlink&quot; title=&quot;模块化&quot;&gt;&lt;/a&gt;模块化&lt;/h5&gt;&lt;p</summary>
-      
-    
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Css盒子模型</title>
-    <link href="https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://anshaohan.github.io/2019/02/16/Css-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/</id>
-    <published>2019-02-16T11:09:31.000Z</published>
-    <updated>2022-10-05T06:11:58.272Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>标准盒子模型： </p><ul><li>content（内容）</li><li>margin（外边距） ：盒子与盒子之间的距离。</li><li>padding（内边距）：内容与边框的距离。</li><li>border（边框）</li></ul><p>盒子总宽度 &#x3D; width + padding + border + margin;</p><p>盒子总高度 &#x3D; height + padding + border + margin</p><p> 也就是，<code>width/height</code> 只是内容高度，不包含 <code>padding</code> 和 <code>border</code>值 </p><p>IE盒子模型（怪异盒模型）</p><ul><li>content </li><li>margin</li></ul><p>盒子总宽度 &#x3D; width + margin;</p><p>盒子总高度 &#x3D; height + margin;</p><p> 也就是，<code>width/height</code> 包含了 <code>padding</code>和 <code>border</code>值 </p><p> 开发中往往使用IE盒模型，只需要设置box-sizing：border-box </p><ul><li>content-box 默认值，元素的 width&#x2F;height 不包含padding，border，与标准盒子模型表现一致</li><li>border-box 元素的 width&#x2F;height 包含 padding，border，与怪异盒子模型表现一致</li><li>inherit 指定 box-sizing 属性的值，应该从父元素继承</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;标准盒子模型： &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;content（内容）&lt;/li&gt;
-&lt;li&gt;margin（外边距） ：盒子与盒子之间的距离。&lt;/li&gt;
-&lt;li&gt;padding（内边距）：内容与边框的距离。&lt;/li&gt;
-&lt;li&gt;bord</summary>
-      
-    
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>new操作符具体干了什么</title>
-    <link href="https://anshaohan.github.io/2019/02/06/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/"/>
-    <id>https://anshaohan.github.io/2019/02/06/new%E6%93%8D%E4%BD%9C%E7%AC%A6%E5%85%B7%E4%BD%93%E5%B9%B2%E4%BA%86%E4%BB%80%E4%B9%88/</id>
-    <published>2019-02-06T02:33:26.000Z</published>
-    <updated>2022-10-06T02:36:08.270Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>new操作符概念 在js中用于给定构造函数创建实例对象</p><p>流程<br>    创建一个新的历史对象 obj<br>    将新的实例对象obj绑定到构造函数的原型链上<br>    新的实例对象继承构造函数的this<br>    最后返回一个新对象</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;new操作符概念 在js中用于给定构造函数创建实例对象&lt;/p&gt;
-&lt;p&gt;流程&lt;br&gt;    创建一个新的历史对象 obj&lt;br&gt;    将新的实例对象obj绑定到构造函数的原型链上&lt;br&gt;    新的实例对象继承构造函数的thi</summary>
-      
-    
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>深浅拷贝</title>
-    <link href="https://anshaohan.github.io/2018/12/05/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
-    <id>https://anshaohan.github.io/2018/12/05/%E6%B7%B1%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
-    <published>2018-12-05T14:16:51.000Z</published>
-    <updated>2022-10-05T14:25:41.609Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>浅拷贝简单来说 拷贝的是对象再栈中的值 或者引用数据类型的指向内存空间<br>也就是说 浅拷贝的基本数据类型不会互相影响  但是引用数据类型就会进行一个互相影响 源对象发生变化之后 拷贝对象也会跟着变化</p><p>深拷贝就是 拷贝的是对象的整体 并且返回一个新的对象 并且新对象是新开辟一个内存空间 两个对象之间并不会互相影响</p><p>实现深拷贝的一些方法</p><p>循环递归</p><p>function deepclone(obj) {<br>      &#x2F;&#x2F; 判断是什么类型的数据<br>      if (typeof obj !&#x3D;&#x3D; “object” || obj &#x3D;&#x3D; null) return obj;<br>      &#x2F;&#x2F; 定义复制对象<br>      let copy &#x3D; {};<br>      &#x2F;&#x2F; 如果传入的是数组则copy定义为数组<br>      if(obj.constructor&#x3D;&#x3D;Array){<br>        copy &#x3D; []<br>      }<br>      for (key in obj) {<br>        console.log(obj[key]);<br>        &#x2F;&#x2F; deepclone(arr[i])<br>        copy[key] &#x3D; deepclone(obj[key])<br>      }<br>      return copy<br>    }</p><p>使用 JSON 中的  stringfiy 和 parse 方法 来将 对象进行解析成json字符串 然后再解析回来 就可以实现一个深拷贝对象</p><p>使用 loadsh第三方库中的 deepclone 这个方法就可以实现对象的深拷贝</p><p>需要注意的是 es6新增的一个 扩展运算符  当对象是仅一层的时候是 一个深拷贝  超过一层之后就是浅拷贝<br>和扩展运算符差不多的是 object中的 assign这个 方法 也是仅一层时是深拷贝 超过一层就是浅拷贝</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;p&gt;浅拷贝简单来说 拷贝的是对象再栈中的值 或者引用数据类型的指向内存空间&lt;br&gt;也就是说 浅拷贝的基本数据类型不会互相影响  但是引用数据类型就会进行一个互相影响 源对象发生变化之后 拷贝对象也会跟着变化&lt;/p&gt;
-&lt;p&gt;深拷贝</summary>
-      
-    
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>水平居中的方法</title>
-    <link href="https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/"/>
-    <id>https://anshaohan.github.io/2018/10/10/%E6%B0%B4%E5%B9%B3%E5%B1%85%E4%B8%AD%E7%9A%84%E6%96%B9%E6%B3%95/</id>
-    <published>2018-10-10T00:35:46.000Z</published>
-    <updated>2022-10-05T23:48:48.570Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>实现居中方法分为两大类</p><p>​居中元素的宽高已知</p><p>​居中元素宽高未知</p><p>​实现方式</p><h3 id="​利用定位-margin-auto"><a href="#​利用定位-margin-auto" class="headerlink" title="​利用定位+margin:auto"></a>​利用定位+margin:auto</h3><style>    .father{        width:500px;        height:300px;        border:1px solid #0a3b98;        position: relative;    }    .son{        width:100px;        height:40px;        background: #f0a238;        position: absolute;        top:0;        left:0;        right:0;        bottom:0;        margin:auto;    }</style><p>父级设置为相对定位 子级绝对定位 并且4个定位属性的值都设置了0<br>如果子级没有设置宽高则会被拉开到和父级一样的宽高</p><h3 id="利用定位-margin-负值"><a href="#利用定位-margin-负值" class="headerlink" title="利用定位+margin:负值"></a>利用定位+margin:负值</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;        margin-left:-50px;        margin-top:-50px;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="利用定位-transfrom"><a href="#利用定位-transfrom" class="headerlink" title="利用定位+transfrom"></a>利用定位+transfrom</h3><style>    .father {        position: relative;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        position: absolute;        top: 50%;        left: 50%;  transform: translate(-50%,-50%);        width: 100px;        height: 100px;        background: red;    }</style><h3 id="table布局"><a href="#table布局" class="headerlink" title="table布局"></a>table布局</h3><style>    .father {        display: table-cell;        width: 200px;        height: 200px;        background: skyblue;        vertical-align: middle;        text-align: center;    }    .son {        display: inline-block;        width: 100px;        height: 100px;        background: red;    }</style><h3 id="flex布局"><a href="#flex布局" class="headerlink" title="flex布局"></a>flex布局</h3><style>    .father {        display: flex;        justify-content: center;        align-items: center;        width: 200px;        height: 200px;        background: skyblue;    }    .son {        width: 100px;        height: 100px;        background: red;    }</style><h3 id="grid布局"><a href="#grid布局" class="headerlink" title="grid布局"></a>grid布局</h3><style>    .father {            display: grid;            align-items:center;            justify-content: center;            width: 200px;            height: 200px;            background: skyblue;        }        .son {            width: 10px;            height: 10px;            border: 1px solid red        }</style>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;实现居中方法分为两大类&lt;/p&gt;
-&lt;p&gt;​		居中元素的宽高已知&lt;/p&gt;
-&lt;p&gt;​		居中元素宽高未知&lt;/p&gt;
-&lt;p&gt;​		实现方式&lt;/p&gt;
-&lt;h3 id=&quot;​利用定位-margin-auto&quot;&gt;&lt;a href=&quot;#​利用定位-</summary>
-      
-    
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>webpack 类似的打包工具有哪些？</title>
-    <link href="https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/"/>
-    <id>https://anshaohan.github.io/2018/10/05/webpack-%E7%B1%BB%E4%BC%BC%E7%9A%84%E6%89%93%E5%8C%85%E5%B7%A5%E5%85%B7%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F/</id>
-    <published>2018-10-05T01:32:19.000Z</published>
-    <updated>2022-10-05T06:11:53.222Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>​rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多</p><p>​优点  代码更简洁  效率更高   默认支持 tree-shaking</p><p>​缺点就是 加载其他类型的资源文件或者是导入commonjs模块</p><p>​编译es新特性等等一些需求需要使用插件来完成 会使开发效率降低</p><p>​但是在打包js库时 rollup比webpack更有优势  打包代码更小更快</p><p>​parcel  </p><p>​相比于webpack来说用法更简单 支持自动安装依赖，并且不需要配置什么，因为时多线程所以构建速度也会比webpack快，但是无法向webpack一样配置对应的loader</p><p>​snowpack</p><p>​每次保存单个文件时 为应用程序每个文件构建一次，就可以永久缓存 文件更改时 snowpack 会重新构建该文件</p><p>​Vite</p><p>​是一种新型前端构建工具 能显著的提升前端开发体验</p><p>​两部分组成</p><p>​一个开发服务器</p><p>​一套构建指令  使用rollup 来打包你的代码  并且不需要自己配置</p><p>​就可以输出用于生产环境的优化过的静态资源</p><p>​快速的冷启动 、即时的模块热更新 真正的按需编译</p><p>​vite会直接启动开发服务器 不需要进行打包操作 也就意味着不需要分析 模块之间的依赖 不需要编译 所以启动速度很快</p><p>​当修改一个模块时只需要然浏览器重新请求这个模块 不需要像webpack那样需要把该模块的相关依赖全部编译 效率相对来说更高</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;​	rollup   是一个 es modules 的打包工具 从作用上看 和webpack差不多  但是要比webpack小巧很多&lt;/p&gt;
-&lt;p&gt;​			优点  代码更简洁  效率更高   默认支持 tree-shaking</summary>
-      
-    
-    
-    
-    <category term="webpack" scheme="https://anshaohan.github.io/categories/webpack/"/>
-    
-    
-    <category term="webpack" scheme="https://anshaohan.github.io/tags/webpack/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说JavaScript中的数据类型</title>
-    <link href="https://anshaohan.github.io/2018/09/06/%E8%AF%B4%E8%AF%B4JavaScript%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <id>https://anshaohan.github.io/2018/09/06/%E8%AF%B4%E8%AF%B4JavaScript%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
-    <published>2018-09-06T01:50:04.000Z</published>
-    <updated>2022-10-06T01:51:40.902Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>js中的数据类型分为两种 基本数据类型 和 引用数据类型<br>两种类型的区别是:储存位置不同</p><p>​基本类型:</p><p>​Number,String,Boolean,Undefined,null,symbol</p><p>​引用数据类型:</p><p>​统称为Object ,</p><p>​Object,Array,Function,Date,RegExp,Map,Set等</p><p>​存储区别:</p><p>​基本数据类型存储在栈中,</p><p>​引用类型的对象储存于堆中,</p><p>​当变量赋值时,解析器首先要确认的就是这个值是基本类型值还是引用类型值</p><p>​声明变量时不同的内存地址分配:</p><p>​简单类型的值存放在栈中,在栈中存放的时对应的值</p><p>​引用类型对应的值存储在堆中,在栈中存放的是指向堆内存的地址</p><p>​不同的类型数据导致赋值变量时的不同:</p><p>​简单类型赋值,是生成相同的值,两个对象不同的地址</p><p>​复杂类型赋值,是将保存对象的内存地址赋值给另一个变量,也就是两个变量指向堆内存中同一个对象</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;p&gt;js中的数据类型分为两种 基本数据类型 和 引用数据类型&lt;br&gt;两种类型的区别是:储存位置不同&lt;/p&gt;
-&lt;p&gt;​				基本类型:&lt;/p&gt;
-&lt;p&gt;​						Number,String,Boolean,Undefined,</summary>
-      
-    
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>防抖和节流</title>
-    <link href="https://anshaohan.github.io/2018/07/05/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/"/>
-    <id>https://anshaohan.github.io/2018/07/05/%E9%98%B2%E6%8A%96%E5%92%8C%E8%8A%82%E6%B5%81/</id>
-    <published>2018-07-05T03:33:50.000Z</published>
-    <updated>2022-10-05T11:07:07.820Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>  防抖和节流简单来说就是个可以处理高频率请求的一种手段</p><pre><code>    防抖         函数在n秒内执行,如果在n秒内又重复执行该函数,那么就会重新计时，直到计时完毕然后运行最后一次请求。    节流        函数在n秒内执行,如果在n秒内又重复执行该函数,则不会重复执行,直到计时完毕然后运行一次请求。    区别        防抖是在一段时间内如果重复多次的请求 那么只会执行最后一次  相对的场景 比如搜索框  当我们输入完毕之后才会发送请求而不是变一下就会发送一个请求        节流是在一段时间内如果重复多次的请求 那么只会执行最后一次 相对的场景  比如监听滚动条然后让图片进行懒加载     相同点        都可以使用setTimeout 进行实现  目的相同 降低回调 节省计算成本    主要应用场景         防抖             a、scroll事件滚动触发，            b、搜索框输入查询            c、表单验证            d、按钮提交事件            e、浏览器窗口缩放，resize事件        节流            a、DOM元素的拖拽功能实现            b、射击游戏类            c、计算鼠标移动的距离            d、监听scroll事件    防抖实现        function F(fn)&#123;  // 防抖函数            let timeout   // 定义一个参数获取时间            return function()&#123;                clearTimeout(timeout)                timeout = setTimeout(()=&gt;&#123;  // 定义定时器 500毫秒的间隔                     fn.apply(this,arguments)                 &#125;,500)            &#125;        &#125;        每次调用 F 函数 都会清除之前的timeout  并且返回一个新的timeout setTimeout 设置的时间结束后才会运行原本的函数，这样就是一个简单的函数防抖实现    节流实现   有两种方法可以实现  定时器  或者 时间戳的方式        function J(fn, wait)&#123;           // 时间戳版            let previous = 0;            return function () &#123;                let now = new Date();                if (now - previous &gt; wait) &#123;                    previous = now;                    func.apply(this, arguments)                &#125;            &#125;        &#125;        定义时间戳然后返回一个函数 函数内部声明一个执行时的时间戳 然后进行判断 当前时间减去定义的时间戳如果大于传入的等待时间那就把定义的时间戳赋值到刚刚创建的新的时间戳 并且执行函数         function J(fn, wait) &#123;            // 定时器版            let timer;            return function () &#123;                let context = this;                if (!timer) &#123;                    timer = setTimeout(() =&gt; &#123;                        timer = null;                        func.apply(context, arguments)                    &#125;, wait)                &#125;            &#125;        &#125;        定时器版本 就是增加一个setTimeout实现  定义一个空变量 然后 返回函数 函数中获取到当前的this 然后进行判断这个定义的变量是否存在 不存在就时false 然后取反值 然后将setTimeout 赋值给定义的变量然后再定时器内部将这个变量释放 并且执行传入的函数</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;  防抖和节流简单来说就是个可以处理高频率请求的一种手段&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;    防抖 
-        函数在n秒内执行,如果在n秒内又重复执行该函数,那么就会重新计时，直到计时完毕然后运行最后一次请求。
-  </summary>
-      
-    
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/categories/Js/"/>
-    
-    
-    <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
     
   </entry>
   
