@@ -76,9 +76,9 @@
     <link href="https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/"/>
     <id>https://anshaohan.github.io/2020/11/06/js%E4%B8%AD%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87/</id>
     <published>2020-11-06T03:05:26.000Z</published>
-    <updated>2022-10-06T05:34:33.369Z</updated>
+    <updated>2022-10-07T10:22:41.069Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><p>js中变量提升概念<br>    在js中如果我们进行先调用 后声明赋值的方式进行使用变量 js中的变量提升就会展现出来<br>    当我们先调用这个变量的时候   这个变量隐式的声明 并且赋值为undefined<br>    然后当我们在下面调用这个变量进行赋值时 就会盖过undefined 变成赋值的那个值</p><pre><code>console.log(num)  //这时会打印出 undefinedvar num = 123 //  这是个赋值过程console.log(num) // 打印 123需要注意的是 变量提升只能使用 var  定义  使用es6新增的let  const的话会之间报错</code></pre>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><p>js中变量提升概念<br>    在js中如果我们进行先调用 后声明赋值的方式进行使用变量 js中的变量提升就会展现出来<br>    当我们先调用这个变量的时候   这个变量隐式的声明 并且赋值为undefined<br>    然后当我们在下面调用这个变量进行赋值时 就会盖过undefined 变成赋值的那个值</p><pre><code>console.log(num)  //这时会打印出 undefinedvar num = 123 //  这是个赋值过程console.log(num) // 打印 123需要注意的是 变量提升只能使用 var  定义  使用es6新增的let  const的话会之间报错关于变量提升的概念 还有函数提升 并且函数提升的优先级要比变量提升高b()function b()&#123;    console.log(&#39;frist&#39;)&#125;function b()&#123;    console.log(&#39;第二&#39;)&#125;var b = 1最后打印结果是 第二</code></pre>]]></content>
     
     
       
