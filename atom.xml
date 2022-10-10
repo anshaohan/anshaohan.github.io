@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-09T03:22:44.936Z</updated>
+  <updated>2022-10-06T02:28:33.156Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>流式布局</title>
-    <link href="https://anshaohan.github.io/2022/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
-    <id>https://anshaohan.github.io/2022/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/</id>
-    <published>2022-10-25T03:21:11.000Z</published>
-    <updated>2022-10-09T03:22:44.936Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-</summary>
-      
-    
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
-    
-    
-    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
-    
-  </entry>
   
   <entry>
     <title>如何通过js判断一个数组</title>
@@ -206,11 +181,11 @@
   </entry>
   
   <entry>
-    <title>双飞翼布局</title>
-    <link href="https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
-    <id>https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</id>
-    <published>2020-10-20T03:20:49.000Z</published>
-    <updated>2022-10-09T03:22:26.710Z</updated>
+    <title>流式布局</title>
+    <link href="https://anshaohan.github.io/2020/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
+    <id>https://anshaohan.github.io/2020/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/</id>
+    <published>2020-10-25T03:21:11.000Z</published>
+    <updated>2022-10-10T03:11:05.174Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span>]]></content>
     
@@ -218,8 +193,34 @@
       
       
     <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
 </summary>
+      
+    
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/categories/Css/"/>
+    
+    
+    <category term="Css" scheme="https://anshaohan.github.io/tags/Css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>双飞翼布局</title>
+    <link href="https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
+    <id>https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</id>
+    <published>2020-10-20T03:20:49.000Z</published>
+    <updated>2022-10-10T03:27:18.860Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><p>双飞翼布局，双飞翼布局相对于圣杯布局来说，左右位置的保留是通过中间列的 margin 值来实现的，而不是通过父元素的 padding 来实现的。本质上来说，也是通过浮动和外边距负值来实现的。</p><body>       <div id="content">            <div class="main">                <div class="warp"></div>            </div><pre><code>        &lt;div class=&quot;adise&quot;&gt;left&lt;/div&gt;        &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;   &lt;/div&gt;</code></pre></body><style>        #content{            border: 1px solid #999;        }        #content:after{            /* 清除浮动 */            content: '';            display: block;            clear: both;        }        .main, .adise, .extra{            float: left;            /* 全体浮动 */        }        .main{            width: 100%;        }        .warp{            background: blue;            margin-left: 100px;            margin-right: 100px;            height: 350px;        }        .adise{            width: 100px;            height: 300px;            background: red;            margin-left: -100%;        }        .extra{            width: 100px;            height: 300px;            background: yellow;            margin-left: -100px;        }<p></style></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;p&gt;双飞翼布局，双飞翼布局相对于圣杯布局来说，左右位置的保留是通过中间列的 margin 值来实现的，而不是通过父元素的 padding 来实现的。本质上来说，也是通过浮动和外边距负值来实现的。&lt;/p&gt;
+&lt;body&gt;
+      </summary>
       
     
     
@@ -236,15 +237,21 @@
     <link href="https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/"/>
     <id>https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/</id>
     <published>2020-10-09T03:20:59.000Z</published>
-    <updated>2022-10-09T03:22:12.692Z</updated>
+    <updated>2022-10-10T03:26:06.327Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><body>   <pre><code>&lt;div id=&quot;content&quot;&gt;  &lt;div class=&quot;main&quot;&gt;main&lt;/div&gt;    &lt;div class=&quot;aside&quot;&gt;left&lt;/div&gt;  &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;&lt;/div&gt;</code></pre></body><h3 id="定位-浮动"><a href="#定位-浮动" class="headerlink" title="定位+浮动"></a>定位+浮动</h3><style>  #content {      border: 1px solid #999;      padding-left: 100px; /*利用内边距填充内容,且填充元素的宽度必须一致*/      padding-right: 100px; /*利用内边距填充内容,且填充元素的宽度必须一致*/      min-width: 200px; /*防止不断挤压宽度，main宽度过小，造成布局错乱*/    }    #content:after {      /*清除浮动*/      content: "";      display: block;      clear: both;    }    /* 将三个子元素都浮动 */    .main,    .aside,    .extra {      float: left;    }    .main {      background-color: blue;      height: 350px;      width: 100%; /* 中间元素宽度自适应 */    }    .aside {      background: red;      width: 100px; /*利用父级内边距填充内容,宽度与父级宽度必须一致*/      height: 300px;      margin-left: -100%; /*减去浮动main的宽度，置于main层级左边*/      position: relative;      left: -100px; /*移动到父级内边距中*/          }    .extra {      background-color: yellow;      width: 100px;      height: 300px;      margin-left: -100px;      position: relative;      left: 100px;    }  </style><h3 id="相对简单的使用flex进行布局"><a href="#相对简单的使用flex进行布局" class="headerlink" title="相对简单的使用flex进行布局"></a>相对简单的使用flex进行布局</h3>  <style>    #content{      display: flex;    }    .aside{      flex: 1;          }     </style>]]></content>
     
     
       
       
     <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-</summary>
+
+&lt;body&gt;
+   
+&lt;pre&gt;&lt;code&gt;&amp;lt;div id=&amp;quot;content&amp;quot;&amp;gt;
+  &amp;lt;div class=&amp;quot;main&amp;quot;&amp;gt;main&amp;lt;/div&amp;gt;
+
+    </summary>
       
     
     
