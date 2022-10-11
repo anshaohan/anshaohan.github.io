@@ -185,15 +185,16 @@
     <link href="https://anshaohan.github.io/2020/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/"/>
     <id>https://anshaohan.github.io/2020/10/25/%E6%B5%81%E5%BC%8F%E5%B8%83%E5%B1%80/</id>
     <published>2020-10-25T03:21:11.000Z</published>
-    <updated>2022-10-10T03:11:05.174Z</updated>
+    <updated>2022-10-11T06:03:21.605Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><p>流式布局（百分⽐布局）定义流式布局，就是百分⽐布局，也称⾮固定像素布局。<br>通过盒⼦的宽度设置成百分⽐根据屏幕的宽度进⾏伸缩，不受固定像素的限制，内容向两侧填充。<br>在早期⽤来应对不同尺⼨的PC端，如今也是移动开发使⽤的⽐较常见的布局⽅式。<br>max-*、min-*百分⽐布局经常搭配这两个使⽤⽐如所选区域占宽75%，但是将视觉视⼝调⼩⼜需限制其最⼩宽度，所以往往通过min-width限制，在定义图⽚时往往使⽤max-width等于其宽度来防⽌图⽚拉伸变形。<br>如：</p><style>    body{    margin: 0 auto;    width: 100%;        min-width: 320px;        max-width: 640px;        font-size: 14px;        font-family: -apple-system,Helvetica, sans-serif;    color: #666;        line-height: 1.5;    }</style><p>优缺点</p><p>优点：通过百分⽐设置宽度，可以⾃适应不同尺⼨屏幕<br>缺点：⾼度和⽂字⼤⼩都是通过px固定取值，所以如果当显⽰屏幕过⼤或过⼩可能会导致某些页⾯元素被拉的很长很扁，不能正常显⽰</p>]]></content>
     
     
       
       
     <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-</summary>
+
+&lt;p&gt;流式布局（百分⽐布局）定义流式布局，就是百分⽐布局，也称⾮固定像素布局。&lt;br&gt;通过盒⼦的宽度设置成百分⽐根据屏幕的宽度进⾏伸缩，不受固定像素的限制，内容向两侧填充。&lt;br&gt;在早期⽤来应对不同尺⼨的PC端，如今也是移动开发使</summary>
       
     
     
@@ -501,15 +502,18 @@
     <link href="https://anshaohan.github.io/2019/06/09/%E9%97%AD%E5%8C%85/"/>
     <id>https://anshaohan.github.io/2019/06/09/%E9%97%AD%E5%8C%85/</id>
     <published>2019-06-09T11:20:35.000Z</published>
-    <updated>2022-10-09T03:21:36.937Z</updated>
+    <updated>2022-10-11T06:54:40.500Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><p>闭包 简单来说就是一个函数可以访问另一个函数内部的变量</p><p>js中是允许使用内部函数的 所以当我们在一个函数内部创建一个内部函数时 这个内部函数可以访问外部函数的作用域 并且当这个内部函数<br>在外部函数外面被调用时就形成了闭包<br> 闭包的特点<br>        创建私有变量  不会污染全局环境<br>        延长变量的生命周期<br>闭包的缺点<br>        如果滥用闭包的话会造成内存泄漏<br>        解决方法就是可以在运行结束之后将变量释放 赋值为null</p><script>    function get(){        var num = 1        return function (){            num++            console.log(num)        }            }    var x = get()    x()//2    x()//3    x()//4    x()//5   // 在内部函数中调用 num变量会进行一个缓存数据 每次调用都可以进行累加</script>]]></content>
     
     
       
       
     <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-</summary>
+
+
+&lt;p&gt;闭包 简单来说就是一个函数可以访问另一个函数内部的变量&lt;/p&gt;
+&lt;p&gt;js中是允许使用内部函数的 所以当我们在一个函数内部创建一个内部函数时 这个内部函数可以访问外部函数的作用域 并且当这个内部函数&lt;br&gt;在外部函数外面被</summary>
       
     
     

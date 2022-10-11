@@ -752,12 +752,20 @@ diff算法 是一种对比算法 对比的对象是 新旧虚拟dom diff算法�
             <div class="abstract-content">
                 
 
+
+闭包 简单来说就是一个函数可以访问另一个函数内部的变量
+js中是允许使用内部函数的 所以当我们在一个函数内部创建一个内部函数时 这个内部函数可以访问外部函数的作用域 并且当这个内部函数在外部函数外面被调用时就形成了闭包 闭包的特点        创建私有变量  不会污染全局环境        延长变量的生命周期闭包的缺点        如果滥用闭包的话会造成内存泄漏        解决方法就是可以在运行结束之后将变量释放 赋值为null
+
+    function get(){
+        var num = 1
+        return function (){
+    ...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/10/09">
+                <div class="abstract-date" title="Last updated: 2022/10/11">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/06/09</span>
                 </div>
                 <!-- tags -->
