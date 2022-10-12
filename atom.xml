@@ -6,7 +6,7 @@
   <link href="https://anshaohan.github.io/atom.xml" rel="self"/>
   
   <link href="https://anshaohan.github.io/"/>
-  <updated>2022-10-06T02:28:33.156Z</updated>
+  <updated>2022-10-11T07:48:39.753Z</updated>
   <id>https://anshaohan.github.io/</id>
   
   <author>
@@ -15,6 +15,19 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>vue路由原理</title>
+    <link href="https://anshaohan.github.io/2022/10/11/vue%E8%B7%AF%E7%94%B1%E5%8E%9F%E7%90%86/"/>
+    <id>https://anshaohan.github.io/2022/10/11/vue%E8%B7%AF%E7%94%B1%E5%8E%9F%E7%90%86/</id>
+    <published>2022-10-11T07:48:39.000Z</published>
+    <updated>2022-10-11T07:48:39.753Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何通过js判断一个数组</title>
@@ -211,9 +224,9 @@
     <link href="https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/"/>
     <id>https://anshaohan.github.io/2020/10/20/%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80/</id>
     <published>2020-10-20T03:20:49.000Z</published>
-    <updated>2022-10-10T03:27:18.860Z</updated>
+    <updated>2022-10-12T00:39:10.248Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><p>双飞翼布局，双飞翼布局相对于圣杯布局来说，左右位置的保留是通过中间列的 margin 值来实现的，而不是通过父元素的 padding 来实现的。本质上来说，也是通过浮动和外边距负值来实现的。</p><body>       <div id="content">            <div class="main">                <div class="warp"></div>            </div><pre><code>        &lt;div class=&quot;adise&quot;&gt;left&lt;/div&gt;        &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;   &lt;/div&gt;</code></pre></body><style>        #content{            border: 1px solid #999;        }        #content:after{            /* 清除浮动 */            content: '';            display: block;            clear: both;        }        .main, .adise, .extra{            float: left;            /* 全体浮动 */        }        .main{            width: 100%;        }        .warp{            background: blue;            margin-left: 100px;            margin-right: 100px;            height: 350px;        }        .adise{            width: 100px;            height: 300px;            background: red;            margin-left: -100%;        }        .extra{            width: 100px;            height: 300px;            background: yellow;            margin-left: -100px;        }<p></style></p>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><p>双飞翼布局，双飞翼布局相对于圣杯布局来说，左右位置的保留是通过中间列的 margin 值来实现的，而不是通过父元素的 padding 来实现的。本质上来说，也是通过浮动和外边距负值来实现的。</p><body>       <div id="content">            <div class="main">                <div class="warp"></div>            </div><pre><code>        &lt;div class=&quot;adise&quot;&gt;left&lt;/div&gt;        &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;   &lt;/div&gt;</code></pre></body> <pre><code>    #content&#123;        border: 1px solid #999;    &#125;    #content:after&#123;        /* 清除浮动 */        content: &#39;&#39;;        display: block;        clear: both;    &#125;    .main, .adise, .extra&#123;        float: left;        /* 全体浮动 */    &#125;    .main&#123;        width: 100%;    &#125;    .warp&#123;        background: blue;        margin-left: 100px;        margin-right: 100px;        height: 350px;    &#125;    .adise&#123;        width: 100px;        height: 300px;        background: red;        margin-left: -100%;    &#125;    .extra&#123;        width: 100px;        height: 300px;        background: yellow;        margin-left: -100px;    &#125;</code></pre>]]></content>
     
     
       
@@ -238,9 +251,9 @@
     <link href="https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/"/>
     <id>https://anshaohan.github.io/2020/10/09/%E5%9C%A3%E6%9D%AF%E5%B8%83%E5%B1%80/</id>
     <published>2020-10-09T03:20:59.000Z</published>
-    <updated>2022-10-10T03:26:06.327Z</updated>
+    <updated>2022-10-12T00:38:59.871Z</updated>
     
-    <content type="html"><![CDATA[<span id="more"></span><body>   <pre><code>&lt;div id=&quot;content&quot;&gt;  &lt;div class=&quot;main&quot;&gt;main&lt;/div&gt;    &lt;div class=&quot;aside&quot;&gt;left&lt;/div&gt;  &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;&lt;/div&gt;</code></pre></body><h3 id="定位-浮动"><a href="#定位-浮动" class="headerlink" title="定位+浮动"></a>定位+浮动</h3><style>  #content {      border: 1px solid #999;      padding-left: 100px; /*利用内边距填充内容,且填充元素的宽度必须一致*/      padding-right: 100px; /*利用内边距填充内容,且填充元素的宽度必须一致*/      min-width: 200px; /*防止不断挤压宽度，main宽度过小，造成布局错乱*/    }    #content:after {      /*清除浮动*/      content: "";      display: block;      clear: both;    }    /* 将三个子元素都浮动 */    .main,    .aside,    .extra {      float: left;    }    .main {      background-color: blue;      height: 350px;      width: 100%; /* 中间元素宽度自适应 */    }    .aside {      background: red;      width: 100px; /*利用父级内边距填充内容,宽度与父级宽度必须一致*/      height: 300px;      margin-left: -100%; /*减去浮动main的宽度，置于main层级左边*/      position: relative;      left: -100px; /*移动到父级内边距中*/          }    .extra {      background-color: yellow;      width: 100px;      height: 300px;      margin-left: -100px;      position: relative;      left: 100px;    }  </style><h3 id="相对简单的使用flex进行布局"><a href="#相对简单的使用flex进行布局" class="headerlink" title="相对简单的使用flex进行布局"></a>相对简单的使用flex进行布局</h3>  <style>    #content{      display: flex;    }    .aside{      flex: 1;          }     </style>]]></content>
+    <content type="html"><![CDATA[<span id="more"></span><body>   <pre><code>&lt;div id=&quot;content&quot;&gt;  &lt;div class=&quot;main&quot;&gt;main&lt;/div&gt;    &lt;div class=&quot;aside&quot;&gt;left&lt;/div&gt;  &lt;div class=&quot;extra&quot;&gt;right&lt;/div&gt;&lt;/div&gt;</code></pre></body><h3 id="定位-浮动"><a href="#定位-浮动" class="headerlink" title="定位+浮动"></a>定位+浮动</h3><p>  #content {<br>      border: 1px solid #999;<br>      padding-left: 100px; &#x2F;<em>利用内边距填充内容,且填充元素的宽度必须一致</em>&#x2F;<br>      padding-right: 100px; &#x2F;<em>利用内边距填充内容,且填充元素的宽度必须一致</em>&#x2F;<br>      min-width: 200px; &#x2F;<em>防止不断挤压宽度，main宽度过小，造成布局错乱</em>&#x2F;<br>    }</p><pre><code>#content:after &#123;  /*清除浮动*/  content: &quot;&quot;;  display: block;  clear: both;&#125;/* 将三个子元素都浮动 */.main,.aside,.extra &#123;  float: left;&#125;.main &#123;  background-color: blue;  height: 350px;  width: 100%; /* 中间元素宽度自适应 */&#125;.aside &#123;  background: red;  width: 100px; /*利用父级内边距填充内容,宽度与父级宽度必须一致*/  height: 300px;  margin-left: -100%; /*减去浮动main的宽度，置于main层级左边*/  position: relative;  left: -100px; /*移动到父级内边距中*/  &#125;.extra &#123;  background-color: yellow;  width: 100px;  height: 300px;  margin-left: -100px;  position: relative;  left: 100px;&#125;</code></pre><h3 id="相对简单的使用flex进行布局"><a href="#相对简单的使用flex进行布局" class="headerlink" title="相对简单的使用flex进行布局"></a>相对简单的使用flex进行布局</h3><pre><code>#content&#123;  display: flex;&#125;.aside&#123;  flex: 1;  &#125;</code></pre>]]></content>
     
     
       
@@ -548,33 +561,6 @@
     
     
     <category term="Js" scheme="https://anshaohan.github.io/tags/Js/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>说说对git的理解</title>
-    <link href="https://anshaohan.github.io/2019/05/16/%E8%AF%B4%E8%AF%B4%E5%AF%B9git%E7%9A%84%E7%90%86%E8%A7%A3/"/>
-    <id>https://anshaohan.github.io/2019/05/16/%E8%AF%B4%E8%AF%B4%E5%AF%B9git%E7%9A%84%E7%90%86%E8%A7%A3/</id>
-    <published>2019-05-16T02:59:54.000Z</published>
-    <updated>2022-10-09T03:00:24.984Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><p>​git 是一个分布式管理版本的控制软件，其作用就是可以让你更好的管理你的程序，</p><p>​<strong>工作原理</strong></p><p>​当我们通过<code>git init</code>创建或者<code>git clone</code>一个项目的时候，项目目录会隐藏一个<code>.git</code>子目录，其作用是用来跟踪管理版本库的</p><p>​<code>Git</code> 中所有数据在存储前都计算校验和，然后以校验和来引用，所以在我们修改或者删除文件的时候，<code>git</code>能够知道</p><p>​<code>Git</code>用以计算校验和的机制叫做 SHA-1 散列（hash，哈希）， 这是一个由 40 个十六进制字符（0-9 和 a-f）组成字符串，基于 Git 中文件的内容或目录结构计算出来</p><p><strong>当我们修改文件的时候，git就会修改文件的状态，可以通过git status进行查询，状态情况如下：</strong></p><p>​已修改（modified）：表示修改了文件，但还没保存到数据库中。</p><p>​已暂存（staged）：表示对一个已修改文件的当前版本做了标记，使之包含在下次提交的快照中。</p><p>​已提交（committed）：表示数据已经安全的保存在本地数据库中。</p><p><strong>文件状态对应的，不同状态的文件在Git中处于不同的工作区域，主要分成了四部分：</strong></p><p>​工作区：相当于本地写代码的区域，如 git clone 一个项目到本地，相当于本地克隆了远程仓库项目的一个副本</p><p>​暂存区：暂存区是一个文件，保存了下次将提交的文件列表信息，一般在 Git 仓库目录中</p><p>​本地仓库：提交更新，找到暂存区域的文件，将快照永久性存储到 Git 本地仓库</p><p>​远程仓库：远程的仓库，如 github</p><p><strong><code>git</code>日常简单的使用的6个命令：</strong></p><p>​add    commit   push   pull  clone  checkout</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-&lt;p&gt;​	git 是一个分布式管理版本的控制软件，其作用就是可以让你更好的管理你的程序，&lt;/p&gt;
-&lt;p&gt;​				&lt;strong&gt;工作原理&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;​						当我们通过&lt;code&gt;git init&lt;/co</summary>
-      
-    
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/categories/Git/"/>
-    
-    
-    <category term="Git" scheme="https://anshaohan.github.io/tags/Git/"/>
     
   </entry>
   
